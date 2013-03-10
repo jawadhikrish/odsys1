@@ -3,8 +3,8 @@
 /* @var $model Upje */
 
 $this->breadcrumbs=array(
-	'Upjes'=>array('index'),
-	'Create',
+	'Jefes de UP'=>array('index'),
+	'Nuevo',
 );
 
 $this->menu=array(
