@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Lista de Personas', 'url'=>array('index')),
+	array('label'=>'Lista de Persona', 'url'=>array('index')),
 	array('label'=>'Nueva Persona', 'url'=>array('create')),
 	array('label'=>'Actualizar Persona', 'url'=>array('update', 'id'=>$model->CED)),
 	array('label'=>'Eliminar Persona', 'url'=>'#', 'linkOptions'=>array('submit'=>array('Borrar','id'=>$model->CED),'confirm'=>'Are you sure you want to delete this item?')),

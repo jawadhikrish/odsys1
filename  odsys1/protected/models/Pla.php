@@ -74,10 +74,10 @@ class Pla extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'PLA' => 'Pla',
-			'CED' => 'Ced',
-			'COD' => 'Cod',
-			'CODT' => 'Codt',
+			'PLA' => 'Codigo de plaza',
+			'CED' => 'Odontologo',
+			'COD' => 'Unidad Programatica',
+			'CODT' => 'Perfil de plaza',
 		);
 	}
 
