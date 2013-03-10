@@ -72,11 +72,11 @@ class Perm extends CActiveRecord
 	{
 		return array(
 			'FECHA' => 'Fecha',
-			'COD' => 'Cod',
-			'CODT' => 'Codt',
+			'COD' => 'Codigo de UP',
+			'CODT' => 'Tipo',
 			'ESTADO' => 'Estado',
-			'CODRAYOSX' => 'Codrayosx',
-			'ESTADORAYOSX' => 'Estadorayosx',
+			'CODRAYOSX' => 'Cod rayos x',
+			'ESTADORAYOSX' => 'Estado rayos x',
 		);
 	}
 

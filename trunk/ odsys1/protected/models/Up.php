@@ -83,8 +83,8 @@ class Up extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'COD' => 'Cod',
-			'DES' => 'Des',
+			'COD' => 'Codigo de Unidad',
+			'DES' => 'Nombre de la Unidad',
 		);
 	}
 

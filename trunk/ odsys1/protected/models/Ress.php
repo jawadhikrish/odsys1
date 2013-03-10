@@ -71,12 +71,12 @@ class Ress extends CActiveRecord
 	{
 		return array(
 			'FECHA' => 'Fecha',
-			'COD' => 'Cod',
+			'COD' => 'Codigo de UP',
 			'TOTAL' => 'Total',
-			'R1' => 'R1',
-			'R2' => 'R2',
-			'R3' => 'R3',
-			'APROV' => 'Aprov',
+			'R1' => 'Referencia 1',
+			'R2' => 'Referencia 2',
+			'R3' => 'Referencia 3',
+			'APROV' => 'Aprobacion',
 		);
 	}
 

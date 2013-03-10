@@ -70,10 +70,10 @@ class Pers extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'CED' => 'Ced',
-			'NOM' => 'Nom',
-			'TEL' => 'Tel',
-			'EMA' => 'Ema',
+			'CED' => 'Cedula',
+			'NOM' => 'Nombre',
+			'TEL' => 'Telelefono',
+			'EMA' => 'Email',
 		);
 	}
 

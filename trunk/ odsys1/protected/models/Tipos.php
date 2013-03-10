@@ -78,9 +78,9 @@ class Tipos extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'CODT' => 'Codt',
+			'CODT' => 'Codigo',
 			'TIPO' => 'Tipo',
-			'DESC' => 'Desc',
+			'DESC' => 'Descripción',
 		);
 	}
 
