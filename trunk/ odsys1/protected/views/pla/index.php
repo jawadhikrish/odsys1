@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Plas',
+	'Plaza',
 );
 
 $this->menu=array(
-	array('label'=>'Create Pla', 'url'=>array('create')),
-	array('label'=>'Manage Pla', 'url'=>array('admin')),
+	array('label'=>'Nueva Plaza', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Plas</h1>
+<h1>Plaza</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

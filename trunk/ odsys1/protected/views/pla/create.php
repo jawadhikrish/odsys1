@@ -3,16 +3,16 @@
 /* @var $model Pla */
 
 $this->breadcrumbs=array(
-	'Plas'=>array('index'),
+	'Plaza'=>array('index'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Pla', 'url'=>array('index')),
-	array('label'=>'Manage Pla', 'url'=>array('admin')),
+	array('label'=>'Listar plazas', 'url'=>array('index')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Pla</h1>
+<h1>Nueva plaza laboral</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

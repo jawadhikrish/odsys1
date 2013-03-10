@@ -10,15 +10,15 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CED')); ?>:</b>
-	<?php echo CHtml::encode($data->CED); ?>
+	<?php echo CHtml::encode($data->cED->NOM); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('COD')); ?>:</b>
-	<?php echo CHtml::encode($data->COD); ?>
+	<?php echo CHtml::encode($data->cOD->DES); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CODT')); ?>:</b>
-	<?php echo CHtml::encode($data->CODT); ?>
+	<?php echo CHtml::encode($data->cODT->DESC); ?>
 	<br />
 
 
