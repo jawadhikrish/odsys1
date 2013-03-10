@@ -10,11 +10,11 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Codigo')); ?>:</b>
-	<?php echo CHtml::encode($data->COD); ?>
+	<?php echo CHtml::encode($data->cOD->COD); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Codigo Tipo')); ?>:</b>
-	<?php echo CHtml::encode($data->CODT); ?>
+	<?php echo CHtml::encode($data->cODT->CODT); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Poblacion')); ?>:</b>

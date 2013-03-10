@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Upjes',
+	'Jefes de Unidad Programatica',
 );
 
 $this->menu=array(
