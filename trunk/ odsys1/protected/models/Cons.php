@@ -74,16 +74,16 @@ class Cons extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'Registro' => 'Registro',
-			'FECHA' => 'Fecha',
-			'COD' => 'Cod',
-			'CODT' => 'Codt',
-			'C1VESALANO' => 'C1 Vesalano',
-			'CSUBSECUENTE' => 'Csubsecuente',
-			'APREVENTIVA' => 'Apreventiva',
-			'ACURATIVA' => 'Acurativa',
-			'PROMHORAS' => 'Promhoras',
-			'PROMACTIV' => 'Promactiv',
+			'Registro' => 'Numero de registro',
+			'FECHA' => 'Fecha de registro',
+			'COD' => 'Codigo de unidad programatica',
+			'CODT' => 'Tipo',
+			'C1VESALANO' => 'Consulta 1 Ves al ano',
+			'CSUBSECUENTE' => 'Consulta subsecuente',
+			'APREVENTIVA' => 'Accion preventiva',
+			'ACURATIVA' => 'Accion curativa',
+			'PROMHORAS' => 'Promocion horas',
+			'PROMACTIV' => 'Promocion activ',
 		);
 	}
 

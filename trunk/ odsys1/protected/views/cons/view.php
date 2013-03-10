@@ -3,16 +3,16 @@
 /* @var $model Cons */
 
 $this->breadcrumbs=array(
-	'Cons'=>array('index'),
+	'Consultas por UP'=>array('index'),
 	$model->Registro,
 );
 
 $this->menu=array(
-	array('label'=>'List Cons', 'url'=>array('index')),
-	array('label'=>'Create Cons', 'url'=>array('create')),
-	array('label'=>'Update Cons', 'url'=>array('update', 'id'=>$model->Registro)),
-	array('label'=>'Delete Cons', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Registro),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Cons', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Nuevo registro', 'url'=>array('create')),
+	array('label'=>'Actualizar registro', 'url'=>array('update', 'id'=>$model->Registro)),
+	array('label'=>'Eliminar Registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Registro),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
