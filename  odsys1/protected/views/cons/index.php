@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Cons',
+	'Consultas por UP',
 );
 
 $this->menu=array(
-	array('label'=>'Create Cons', 'url'=>array('create')),
-	array('label'=>'Manage Cons', 'url'=>array('admin')),
+	array('label'=>'Nuevo registro', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Cons</h1>
+<h1>Registro de consultas por UP </h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

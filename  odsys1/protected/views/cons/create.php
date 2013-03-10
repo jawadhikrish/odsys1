@@ -3,16 +3,16 @@
 /* @var $model Cons */
 
 $this->breadcrumbs=array(
-	'Cons'=>array('index'),
-	'Create',
+	'Consultas por UP'=>array('index'),
+	'Nuevo registro',
 );
 
 $this->menu=array(
-	array('label'=>'List Cons', 'url'=>array('index')),
-	array('label'=>'Manage Cons', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Cons</h1>
+<h1>Nuevo registro de consultas por UP</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
