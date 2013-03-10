@@ -71,11 +71,11 @@ class Pob extends CActiveRecord
 	{
 		return array(
 			'REGISTRO' => 'Registro',
-			'COD' => 'Cod',
-			'GRU' => 'Gru',
-			'HOM' => 'Hom',
-			'MUJ' => 'Muj',
-			'AÑO' => 'AÑ O',
+			'COD' => 'Codigo UP',
+			'GRU' => 'Grupo etario',
+			'HOM' => 'Hombres',
+			'MUJ' => 'Mujeres',
+			'AÑO' => 'AÑO',
 		);
 	}
 
