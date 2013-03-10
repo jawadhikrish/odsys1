@@ -74,15 +74,15 @@ class Supr extends CActiveRecord
 	{
 		return array(
 			'REGISTRO' => 'Registro',
-			'FECHA' => 'Fecha',
-			'COD' => 'Cod',
-			'HUA' => 'Hua',
-			'HUC' => 'Huc',
-			'HUCE' => 'Huce',
-			'HUPS' => 'Hups',
-			'HUT' => 'Hut',
-			'HUO' => 'Huo',
-			'HUAC' => 'Huac',
+			'FECHA' => 'Fecha de registro',
+			'COD' => 'Unidad Programatica',
+			'HUA' => 'Horas atencion',
+			'HUC' => 'Horas curacion',
+			'HUCE' => 'Horas ce',
+			'HUPS' => 'Horas promocion',
+			'HUT' => 'Horas tralado',
+			'HUO' => 'Horas o',
+			'HUAC' => 'Horas ac',
 		);
 	}
 

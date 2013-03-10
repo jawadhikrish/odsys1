@@ -71,10 +71,10 @@ class Upje extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'CED' => 'Ced',
-			'COD' => 'Cod',
-			'CODT' => 'Codt',
-			'POB' => 'Pob',
+			'CED' => 'Odontologo',
+			'COD' => 'Unidad Programatica',
+			'CODT' => 'Perfil',
+			'POB' => 'Poblacion',
 		);
 	}
 
