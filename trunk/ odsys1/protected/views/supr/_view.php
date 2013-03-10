@@ -14,7 +14,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('COD')); ?>:</b>
-	<?php echo CHtml::encode($data->COD); ?>
+	<?php echo CHtml::encode($data->cOD->COD); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('HUA')); ?>:</b>
