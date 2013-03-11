@@ -47,8 +47,8 @@ o <b>=</b>) al principio de cada uno de sus valores de búsqueda para especifica
 	'columns'=>array(
 		'Registro',
 		'FECHA',
-		'COD',
-		'CODT',
+                array('name'=>'COD','value'=>'$data->cOD->DES','type'=>'text',),
+		array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
 		'C1VESALANO',
 		'CSUBSECUENTE',
 		/*

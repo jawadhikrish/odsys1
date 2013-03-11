@@ -16,15 +16,17 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Cons #<?php echo $model->Registro; ?></h1>
+<h1>Registro de consulta #<?php echo $model->Registro; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'Registro',
 		'FECHA',
-		'COD',
-		'CODT',
+		array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
+                        array('up/view','id'=>$model->cOD->COD)),),
+		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
+                        array('tipos/view','id'=>$model->cOD->COD)),),
 		'C1VESALANO',
 		'CSUBSECUENTE',
 		'APREVENTIVA',
