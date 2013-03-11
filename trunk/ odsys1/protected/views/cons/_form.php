@@ -23,49 +23,33 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'FECHA'); ?>
-        
-        <?php
-        $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-            'language'=>'es',
-            'model'=>$model,
-			'value'=>$model->FECHA,
-            'attribute'=>'FECHA',
-            'flat'=>false,
-            'options'=>array(
-                'buttonImageOnly'=> true,
-                'constrainInput'=>true,
-                'currentText'=>'Now',
-				'showAnim'=>'slideDown',
-				'showButtonPanel'=>'true',
-				'mode'=>'focus',
-                'dateFormat'=>'yy-mm-dd',
-            ),
-        ));
-        ?>
+                <?php
+                /*
+                 * Esta funcion llama al componente zii.widgets.jui.CJuiDatePicker
+                 * Que depliega un calendario en la interface de usuario
+                 */
+                $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'language'=>'es',
+                    'model'=>$model,'value'=>$model->FECHA,
+                    'attribute'=>'FECHA','flat'=>false,
+                    'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'currentText'=>'Now',
+                        'showAnim'=>'slideDown','showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy-mm-dd',
+                    ),));
+                ?>
 		<?php // echo $form->textField($model,'FECHA');?>
 		<?php echo $form->error($model,'FECHA'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'COD'); ?>
-        <?php 
-			 $models = Up::model()->findAll();    
-			 $list = CHtml::listData($models,'COD', 'COD'); //En esta linea cambio por el campo que quiero ver  
-			 echo CHtml::dropDownList('Up', $models, $list,array('empty' => '(Seleccione la UP) ')); 
-        ?>
-		<?php //echo $form->textField($model,'COD');?>
+                <?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(), 'COD', 'COD'),array('empty' => ' Seleccione la U.P.')); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CODT'); ?>
-         <?php 
-			 $models = Tipos::model()->findAll();    
-			 $list = CHtml::listData($models,'CODT', 'DESC');   
-			 echo CHtml::dropDownList('Tipos', $models, $list,array('empty' => '(Seleccione el tipo) '));
-			 
-        ?>
-		<?php //echo $form->textField($model,'CODT');?>
+                <?php $list =  ConsController::getRanklist();
+                echo $form->dropDownList($model,'CODT',$list, array('empty' => 'Tipo de programa.')); ?>
 		<?php echo $form->error($model,'CODT'); ?>
 	</div>
 

@@ -6,7 +6,7 @@
  * The followings are the available columns in table 'tipos':
  * @property integer $CODT
  * @property string $TIPO
- * @property string $DESC
+ * @property string $DES
  *
  * The followings are the available model relations:
  * @property Cons[] $cons
@@ -47,10 +47,10 @@ class Tipos extends CActiveRecord
 		return array(
 			array('CODT', 'required'),
 			array('CODT', 'numerical', 'integerOnly'=>true),
-			array('TIPO, DESC', 'length', 'max'=>50),
+			array('TIPO, DES', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('CODT, TIPO, DESC', 'safe', 'on'=>'search'),
+			array('CODT, TIPO, DES', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -80,7 +80,7 @@ class Tipos extends CActiveRecord
 		return array(
 			'CODT' => 'Codigo',
 			'TIPO' => 'Tipo',
-			'DESC' => 'Descripción',
+			'DES' => 'Descripción',
 		);
 	}
 
@@ -97,7 +97,7 @@ class Tipos extends CActiveRecord
 
 		$criteria->compare('CODT',$this->CODT);
 		$criteria->compare('TIPO',$this->TIPO,true);
-		$criteria->compare('DESC',$this->DESC,true);
+		$criteria->compare('DES',$this->DESC,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
