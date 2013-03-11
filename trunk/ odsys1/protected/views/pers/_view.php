@@ -5,8 +5,10 @@
 
 <div class="view">
     <?php echo CHtml::link(CHtml::encode($data->getAttributeLabel('Ver detalles')),array('view','id'=>$data->CED)); ?>
-	<b><?php /* echo CHtml::encode($data->getAttributeLabel('CEDULA'));*/ ?>:</b>
-	<?php  /* echo CHtml::link(CHtml::encode($data->CED),array('view','id'=>$data->CED)); */?>
+
+	<b>
+        <?php  echo CHtml::encode($data->getAttributeLabel('|  Plaza ')); ?>:</b>
+	<?php  foreach ($data->plas as $value) { echo $value->PLA.'';};?>
 	<b><b>&nbsp;&nbsp; | &nbsp;&nbsp;</b><?php echo CHtml::encode($data->NOM); ?>
     <?php /*echo CHtml::encode($data->getAttributeLabel('TELEFONO')); ?>:</b>
 	<?php echo CHtml::encode($data->TEL); ?>
