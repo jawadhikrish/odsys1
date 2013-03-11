@@ -55,6 +55,23 @@ class Cons extends CActiveRecord
 		);
 	}
 
+         /**
+         * Este metodo devuelve una lista con los datos de sentencia SQL
+         * @return List
+         */
+        public function getRanklist()
+        {
+            $sql = "select CODT,DES from tipos where tipo='programa'";
+            $rankList = Yii::app()->db->CreateCommand($sql)->queryAll();
+
+            if (!$rankList)
+                return array();
+
+            foreach ($rankList as $thisRank) {
+                $rankArr[$thisRank['CODT']] = $thisRank['DES'];
+            }
+            return $rankArr;
+         }
 	/**
 	 * @return array relational rules.
 	 */
@@ -67,7 +84,7 @@ class Cons extends CActiveRecord
 			'cODT' => array(self::BELONGS_TO, 'Tipos', 'CODT'),
 		);
 	}
-
+        
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
@@ -76,14 +93,14 @@ class Cons extends CActiveRecord
 		return array(
 			'Registro' => 'Numero de registro',
 			'FECHA' => 'Fecha de registro',
-			'COD' => 'Codigo de unidad programatica',
-			'CODT' => 'Tipo',
+			'COD' => 'Unidad programatica',
+			'CODT' => 'Programa',
 			'C1VESALANO' => 'Consulta 1 Ves al ano',
 			'CSUBSECUENTE' => 'Consulta subsecuente',
 			'APREVENTIVA' => 'Accion preventiva',
 			'ACURATIVA' => 'Accion curativa',
-			'PROMHORAS' => 'Promocion horas',
-			'PROMACTIV' => 'Promocion activ',
+			'PROMHORAS' => 'Promocion Horas',
+			'PROMACTIV' => 'Promocion Actividades',
 		);
 	}
 

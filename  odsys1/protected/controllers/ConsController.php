@@ -19,6 +19,25 @@ class ConsController extends Controller
 		);
 	}
 
+        /**
+         * Este metodo devuelve una lista con los datos de sentencia SQL
+         * @return List
+         */
+        
+        public function getRanklist()
+        {
+            $sql = "select CODT,DES from tipos where tipo='programa'";
+            $rankList = Yii::app()->db->CreateCommand($sql)->queryAll();
+
+            if (!$rankList)
+                return array();
+
+            foreach ($rankList as $thisRank) {
+                $rankArr[$thisRank['CODT']] = $thisRank['DES'];
+            }
+            return $rankArr;
+         }
+         
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
