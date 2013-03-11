@@ -17,7 +17,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'Registro'); ?>
-		<?php echo $form->textField($model,'Registro');  ?>
+		<?php $lIDS =  ConsController::getLastId();
+                echo $form->textField($model,'Registro',array('readonly'=>'readonly', 'TYPE'=>"text",'value'=>$lIDS+1));  ?>
 		<?php echo $form->error($model,'Registro'); ?>
 	</div>
 
@@ -32,7 +33,7 @@
                     'language'=>'es',
                     'model'=>$model,'value'=>$model->FECHA,
                     'attribute'=>'FECHA','flat'=>false,
-                    'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'currentText'=>'Now',
+                    'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'constrainInput'=>true,
                         'showAnim'=>'slideDown','showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy-mm-dd',
                     ),));
                 ?>

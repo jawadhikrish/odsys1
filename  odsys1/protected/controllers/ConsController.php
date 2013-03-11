@@ -38,6 +38,20 @@ class ConsController extends Controller
             return $rankArr;
          }
          
+         /**
+         * Este metodo devuelve el ultimo registro de la tabla
+         * @return List
+         */
+        
+        public function getLastId()
+        {
+            $sql = "SELECT MAX(`registro`) AS id FROM cons";
+            $dataReader= Yii::app()->db->CreateCommand($sql)->queryRow();
+            foreach($dataReader as $row) { 
+                return $row;
+                }
+         }
+         
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
