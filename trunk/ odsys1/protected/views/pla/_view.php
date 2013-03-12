@@ -18,7 +18,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CODT')); ?>:</b>
-	<?php echo CHtml::encode($data->cODT->DESC); ?>
+	<?php echo CHtml::encode($data->cODT->DES); ?>
 	<br />
 
 

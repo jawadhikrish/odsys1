@@ -28,9 +28,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'DESC'); ?>
-		<?php echo $form->textField($model,'DESC',array('size'=>50,'maxlength'=>50)); ?>
-		<?php echo $form->error($model,'DESC'); ?>
+		<?php echo $form->labelEx($model,'DES'); ?>
+		<?php echo $form->textField($model,'DES',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'DES'); ?>
 	</div>
 
 	<div class="row buttons">

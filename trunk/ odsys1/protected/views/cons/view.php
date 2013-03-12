@@ -18,6 +18,13 @@ $this->menu=array(
 
 <h1>Registro de consulta #<?php echo $model->Registro; ?></h1>
 
+<?php 
+//print_r($model->Registro);
+
+?>
+
+
+
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
@@ -25,7 +32,8 @@ $this->menu=array(
 		'FECHA',
 		array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
                         array('up/view','id'=>$model->cOD->COD)),),
-		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::encode($model->cODT->DES)),
+		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
+		                  array('tipos/view','id'=>$model->cODT->CODT)),),
 		'C1VESALANO',
 		'CSUBSECUENTE',
 		'APREVENTIVA',

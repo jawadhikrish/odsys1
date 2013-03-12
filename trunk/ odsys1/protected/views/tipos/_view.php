@@ -13,8 +13,8 @@
 	<?php echo CHtml::encode($data->TIPO); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('DESC')); ?>:</b>
-	<?php echo CHtml::encode($data->DESC); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('DES')); ?>:</b>
+	<?php echo CHtml::encode($data->DES); ?>
 	<br />
 
 

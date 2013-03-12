@@ -22,8 +22,11 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'PLA',
-		'CED',
-		'COD',
-		'CODT',
+		array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cED->NOM),
+                        array('pers/view','id'=>$model->cED->CED)),),
+		array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
+                        array('up/view','id'=>$model->cOD->COD)),),
+		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
+		                  array('tipos/view','id'=>$model->cODT->CODT)),),
 	),
 )); ?>
