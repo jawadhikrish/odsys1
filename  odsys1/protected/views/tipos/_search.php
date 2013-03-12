@@ -22,8 +22,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'DESC'); ?>
-		<?php echo $form->textField($model,'DESC',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->label($model,'DES'); ?>
+		<?php echo $form->textField($model,'DES',array('size'=>50,'maxlength'=>50)); ?>
 	</div>
 
 	<div class="row buttons">

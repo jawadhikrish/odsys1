@@ -3,13 +3,13 @@
 /* @var $model Tipos */
 
 $this->breadcrumbs=array(
-	'Tiposes'=>array('index'),
-	'Manage',
+	'Tipologia de los servicios'=>array('index'),
+	'Administrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Tipos', 'url'=>array('index')),
-	array('label'=>'Create Tipos', 'url'=>array('create')),
+	array('label'=>'Listar Tipos', 'url'=>array('index')),
+	array('label'=>'Nuevo Tipo', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -47,7 +47,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'CODT',
 		'TIPO',
-		'DESC',
+		'DES',
 		array(
 			'class'=>'CButtonColumn',
 		),
