@@ -10,7 +10,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('COD')); ?>:</b>
-	<?php echo CHtml::encode($data->COD); ?>
+	<?php echo CHtml::encode($data->cOD->DES); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('INSTALADA')); ?>:</b>

@@ -3,16 +3,16 @@
 /* @var $model Infra */
 
 $this->breadcrumbs=array(
-	'Infras'=>array('index'),
-	'Create',
+	'Infraestructura'=>array('index'),
+	'Registrar Nuevo',
 );
 
 $this->menu=array(
-	array('label'=>'List Infra', 'url'=>array('index')),
-	array('label'=>'Manage Infra', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Infra</h1>
+<h1>Registrar Infraestructura</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

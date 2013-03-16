@@ -3,19 +3,19 @@
 /* @var $model Capi */
 
 $this->breadcrumbs=array(
-	'Capis'=>array('index'),
+	'Capacidad'=>array('index'),
 	$model->FECHA=>array('view','id'=>$model->FECHA),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Capi', 'url'=>array('index')),
-	array('label'=>'Create Capi', 'url'=>array('create')),
-	array('label'=>'View Capi', 'url'=>array('view', 'id'=>$model->FECHA)),
-	array('label'=>'Manage Capi', 'url'=>array('admin')),
+	array('label'=>'Listar registrar', 'url'=>array('index')),
+	array('label'=>'Resgistrar Capacidad', 'url'=>array('create')),
+	array('label'=>'Ver registros', 'url'=>array('view', 'id'=>$model->FECHA)),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Capi <?php echo $model->FECHA; ?></h1>
+<h1>Actualizar capacidad del servicio<?php echo $model->FECHA; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

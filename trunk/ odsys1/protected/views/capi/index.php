@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Capis',
+	'Capacidad Instalada',
 );
 
 $this->menu=array(
-	array('label'=>'Create Capi', 'url'=>array('create')),
-	array('label'=>'Manage Capi', 'url'=>array('admin')),
+	array('label'=>'Registrar Capacidad', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Capis</h1>
+<h1>Capacidad instalada de los servicios de odontologia</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

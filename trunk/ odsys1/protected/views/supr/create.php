@@ -3,16 +3,16 @@
 /* @var $model Supr */
 
 $this->breadcrumbs=array(
-	'Suprs'=>array('index'),
-	'Create',
+	'Supervisión'=>array('index'),
+	'Registrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Supr', 'url'=>array('index')),
-	array('label'=>'Manage Supr', 'url'=>array('admin')),
+	array('label'=>'Listar Supervisiones', 'url'=>array('index')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Supr</h1>
+<h1>Registrar supervisión</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
