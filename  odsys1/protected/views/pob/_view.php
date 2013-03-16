@@ -10,7 +10,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('COD')); ?>:</b>
-	<?php echo CHtml::encode($data->COD); ?>
+	<?php echo CHtml::encode($data->cOD->DES); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('GRU')); ?>:</b>
@@ -25,8 +25,8 @@
 	<?php echo CHtml::encode($data->MUJ); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('AÑO')); ?>:</b>
-	<?php echo CHtml::encode($data->AÑO); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ANO')); ?>:</b>
+	<?php echo CHtml::encode($data->ANO); ?>
 	<br />
 
 
