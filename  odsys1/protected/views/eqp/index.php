@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Eqps',
+	'Equipameinto',
 );
 
 $this->menu=array(
-	array('label'=>'Create Eqp', 'url'=>array('create')),
-	array('label'=>'Manage Eqp', 'url'=>array('admin')),
+	array('label'=>'Registrar Equipo', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Eqps</h1>
+<h1>Equipamientos</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

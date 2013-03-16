@@ -3,16 +3,16 @@
 /* @var $model Eqp */
 
 $this->breadcrumbs=array(
-	'Eqps'=>array('index'),
-	'Create',
+	'Equipo'=>array('index'),
+	'Registrar nuevo',
 );
 
 $this->menu=array(
-	array('label'=>'List Eqp', 'url'=>array('index')),
-	array('label'=>'Manage Eqp', 'url'=>array('admin')),
+	array('label'=>'Listar Equipos', 'url'=>array('index')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Eqp</h1>
+<h1>Registrar equipo nuevo</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

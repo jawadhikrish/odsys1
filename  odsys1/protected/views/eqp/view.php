@@ -3,27 +3,29 @@
 /* @var $model Eqp */
 
 $this->breadcrumbs=array(
-	'Eqps'=>array('index'),
+	'Equipamiento'=>array('index'),
 	$model->PLACA,
 );
 
 $this->menu=array(
-	array('label'=>'List Eqp', 'url'=>array('index')),
-	array('label'=>'Create Eqp', 'url'=>array('create')),
-	array('label'=>'Update Eqp', 'url'=>array('update', 'id'=>$model->PLACA)),
-	array('label'=>'Delete Eqp', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->PLACA),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Eqp', 'url'=>array('admin')),
+	array('label'=>'Listar Equipamiento', 'url'=>array('index')),
+	array('label'=>'Nuevo Equipo', 'url'=>array('create')),
+	array('label'=>'Actualizar Equipo', 'url'=>array('update', 'id'=>$model->PLACA)),
+	array('label'=>'Eliminar Equipo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->PLACA),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Eqp #<?php echo $model->PLACA; ?></h1>
+<h1>Ver equipo #<?php echo $model->PLACA; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'PLACA',
-		'CODT',
-		'COD',
+		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
+                        array('tipos/view','id'=>$model->cODT->CODT)),),
+		array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
+                        array('up/view','id'=>$model->cOD->COD)),),
 		'FECHAREG',
 		'ESTADO',
 	),

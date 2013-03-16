@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Resses',
+	'Referencias de servicios de salud',
 );
 
 $this->menu=array(
-	array('label'=>'Create Ress', 'url'=>array('create')),
-	array('label'=>'Manage Ress', 'url'=>array('admin')),
+	array('label'=>'Registrar Referencia', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Resses</h1>
+<h1>Referencias de servicio de salud</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

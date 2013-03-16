@@ -9,7 +9,7 @@
 		<div id="sidebar">
 		<?php
 			$this->beginWidget('zii.widgets.CPortlet', array(
-				'title'=>'<span class="icon icon-sitemap_color">Operations</span>',
+				'title'=>'<span class="icon icon-sitemap_color">Menu / Opciones</span>',
 			));
 			$this->widget('zii.widgets.CMenu', array(
 				'items'=>$this->menu,
@@ -18,7 +18,7 @@
 			$this->endWidget();
 		?>
 		
-		<?php
+		<?php /*
 			$this->beginWidget('zii.widgets.CPortlet', array(
 				'title'=>'<span class="icon icon-user">Account Details</span>',
 			));
@@ -68,7 +68,7 @@
 			?>
 			<?php
 			$this->endWidget();
-		?>
+		*/?>
 		
 		</div><!-- sidebar -->
 	</div>

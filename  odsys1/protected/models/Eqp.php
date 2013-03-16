@@ -72,9 +72,9 @@ class Eqp extends CActiveRecord
 	{
 		return array(
 			'PLACA' => 'Placa',
-			'CODT' => 'Codt',
-			'COD' => 'Cod',
-			'FECHAREG' => 'Fechareg',
+			'CODT' => 'Tipo',
+			'COD' => 'Unidad Programatica',
+			'FECHAREG' => 'Fecha de registro',
 			'ESTADO' => 'Estado',
 		);
 	}

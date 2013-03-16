@@ -71,7 +71,7 @@ class Ress extends CActiveRecord
 	{
 		return array(
 			'FECHA' => 'Fecha',
-			'COD' => 'Codigo de UP',
+			'COD' => 'U.P',
 			'TOTAL' => 'Total',
 			'R1' => 'Referencia 1',
 			'R2' => 'Referencia 2',
