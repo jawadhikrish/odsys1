@@ -3,16 +3,16 @@
 /* @var $model Ress */
 
 $this->breadcrumbs=array(
-	'Resses'=>array('index'),
-	'Create',
+	'Referencias'=>array('index'),
+	'Registrar referencia',
 );
 
 $this->menu=array(
-	array('label'=>'List Ress', 'url'=>array('index')),
-	array('label'=>'Manage Ress', 'url'=>array('admin')),
+	array('label'=>'Listar Referencia', 'url'=>array('index')),
+	array('label'=>'Administar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Ress</h1>
+<h1>Registrar Referencias</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

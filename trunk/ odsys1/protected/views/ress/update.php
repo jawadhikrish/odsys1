@@ -3,19 +3,19 @@
 /* @var $model Ress */
 
 $this->breadcrumbs=array(
-	'Resses'=>array('index'),
+	'Referencias'=>array('index'),
 	$model->FECHA=>array('view','id'=>$model->FECHA),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Ress', 'url'=>array('index')),
-	array('label'=>'Create Ress', 'url'=>array('create')),
-	array('label'=>'View Ress', 'url'=>array('view', 'id'=>$model->FECHA)),
-	array('label'=>'Manage Ress', 'url'=>array('admin')),
+	array('label'=>'Listar Referencias', 'url'=>array('index')),
+	array('label'=>'Registrar Referencia', 'url'=>array('create')),
+	array('label'=>'Ver Referencias', 'url'=>array('view', 'id'=>$model->FECHA)),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Ress <?php echo $model->FECHA; ?></h1>
+<h1>Actualizar referencias <?php echo $model->FECHA; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
