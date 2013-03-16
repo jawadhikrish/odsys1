@@ -3,13 +3,13 @@
 /* @var $model Pob */
 
 $this->breadcrumbs=array(
-	'Pobs'=>array('index'),
-	'Manage',
+	'Población'=>array('index'),
+	'Administrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Pob', 'url'=>array('index')),
-	array('label'=>'Create Pob', 'url'=>array('create')),
+	array('label'=>'Listar Población', 'url'=>array('index')),
+	array('label'=>'Registrar Población', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,14 +26,14 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Pobs</h1>
+<h1>Administrar población</h1>
 
 <p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+Si lo desea, puede introducir un operador de comparación (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+o <b>=</b>)al comienzo de cada uno de los valores de su búsqueda para especificar cómo la comparación se debe hacer.
 </p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('Busqueda avanzada','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -46,11 +46,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'REGISTRO',
-		'COD',
+		 array('name'=>'COD','value'=>'$data->cOD->DES','type'=>'text',),
 		'GRU',
 		'HOM',
 		'MUJ',
-		'AÑO',
+		'ANO',
 		array(
 			'class'=>'CButtonColumn',
 		),

@@ -48,7 +48,7 @@ class Pob extends CActiveRecord
 			array('AÑO', 'length', 'max'=>4),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('REGISTRO, COD, GRU, HOM, MUJ, AÑO', 'safe', 'on'=>'search'),
+			array('REGISTRO, COD, GRU, HOM, MUJ, ANO', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -75,7 +75,7 @@ class Pob extends CActiveRecord
 			'GRU' => 'Grupo etario',
 			'HOM' => 'Hombres',
 			'MUJ' => 'Mujeres',
-			'AÑO' => 'AÑO',
+			'ANO' => 'AÑO',
 		);
 	}
 
@@ -95,7 +95,7 @@ class Pob extends CActiveRecord
 		$criteria->compare('GRU',$this->GRU,true);
 		$criteria->compare('HOM',$this->HOM);
 		$criteria->compare('MUJ',$this->MUJ);
-		$criteria->compare('AÑO',$this->AÑO,true);
+		$criteria->compare('ANO',$this->ANO,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

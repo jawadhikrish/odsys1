@@ -11,7 +11,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -23,7 +23,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'COD'); ?>
-		<?php echo $form->textField($model,'COD'); ?>
+		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(), 'COD', 'COD'),array('empty' => ' Seleccione la U.P.')); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
 
@@ -46,9 +46,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'AÑO'); ?>
-		<?php echo $form->textField($model,'AÑO',array('size'=>4,'maxlength'=>4)); ?>
-		<?php echo $form->error($model,'AÑO'); ?>
+		<?php echo $form->labelEx($model,'ANO'); ?>
+		<?php echo $form->textField($model,'ANO',array('size'=>4,'maxlength'=>4)); ?>
+		<?php echo $form->error($model,'ANO'); ?>
 	</div>
 
 	<div class="row buttons">

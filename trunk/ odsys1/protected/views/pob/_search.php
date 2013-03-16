@@ -37,8 +37,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'AÑO'); ?>
-		<?php echo $form->textField($model,'AÑO',array('size'=>4,'maxlength'=>4)); ?>
+		<?php echo $form->label($model,'ANO'); ?>
+		<?php echo $form->textField($model,'ANO',array('size'=>4,'maxlength'=>4)); ?>
 	</div>
 
 	<div class="row buttons">
