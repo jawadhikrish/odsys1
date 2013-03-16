@@ -14,10 +14,10 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('COD')); ?>:</b>
-	<?php echo CHtml::encode($data->cOD->COD); ?>
+	<?php echo CHtml::encode($data->cOD->DES); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('HUA')); ?>:</b>
+	<b><?php /*echo CHtml::encode($data->getAttributeLabel('HUA')); ?>:</b>
 	<?php echo CHtml::encode($data->HUA); ?>
 	<br />
 

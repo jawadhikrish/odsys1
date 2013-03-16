@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Suprs',
+	'Supervisión',
 );
 
 $this->menu=array(
-	array('label'=>'Create Supr', 'url'=>array('create')),
-	array('label'=>'Manage Supr', 'url'=>array('admin')),
+	array('label'=>'Nueva Supervisión', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
