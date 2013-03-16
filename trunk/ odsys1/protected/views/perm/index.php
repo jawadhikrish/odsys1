@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Perms',
+	'Permisos',
 );
 
 $this->menu=array(
-	array('label'=>'Create Perm', 'url'=>array('create')),
-	array('label'=>'Manage Perm', 'url'=>array('admin')),
+	array('label'=>'Registrar permiso', 'url'=>array('create')),
+	array('label'=>'Administración', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Perms</h1>
+<h1>Permisos</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -3,16 +3,16 @@
 /* @var $model Perm */
 
 $this->breadcrumbs=array(
-	'Perms'=>array('index'),
-	'Create',
+	'Permisos'=>array('index'),
+	'Registro',
 );
 
 $this->menu=array(
-	array('label'=>'List Perm', 'url'=>array('index')),
-	array('label'=>'Manage Perm', 'url'=>array('admin')),
+	array('label'=>'Listar Perm', 'url'=>array('index')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Perm</h1>
+<h1>Registrar Permiso</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

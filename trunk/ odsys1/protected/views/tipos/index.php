@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Tiposes',
+	'Tipologia del sistema',
 );
 
 $this->menu=array(
-	array('label'=>'Create Tipos', 'url'=>array('create')),
-	array('label'=>'Manage Tipos', 'url'=>array('admin')),
+	array('label'=>'Nuevo Tipo', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Tiposes</h1>
+<h1>Tipologia del sistema</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

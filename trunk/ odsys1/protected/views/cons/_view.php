@@ -21,7 +21,7 @@
 	<?php echo CHtml::encode($data->cODT->DES); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('C1VESALANO')); ?>:</b>
+	<b><?php /*echo CHtml::encode($data->getAttributeLabel('C1VESALANO')); ?>:</b>
 	<?php echo CHtml::encode($data->C1VESALANO); ?>
 	<br />
 

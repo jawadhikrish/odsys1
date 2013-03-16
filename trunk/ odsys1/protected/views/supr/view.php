@@ -23,7 +23,6 @@ $this->menu=array(
 	'attributes'=>array(
 		'REGISTRO',
 		'FECHA',
-		'COD',
             array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
                         array('up/view','id'=>$model->cOD->COD)),),
 		'HUA',
