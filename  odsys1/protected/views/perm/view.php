@@ -22,12 +22,10 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'FECHA',
-		'COD',
             array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
                         array('up/view','id'=>$model->cOD->COD)),),
             array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
 		                  array('tipos/view','id'=>$model->cODT->CODT)),),
-		'CODT',
 		'ESTADO',
 		'CODRAYOSX',
 		'ESTADORAYOSX',

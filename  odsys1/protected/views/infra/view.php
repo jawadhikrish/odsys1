@@ -8,22 +8,24 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Infra', 'url'=>array('index')),
-	array('label'=>'Create Infra', 'url'=>array('create')),
-	array('label'=>'Update Infra', 'url'=>array('update', 'id'=>$model->FECHA)),
-	array('label'=>'Delete Infra', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->FECHA),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Infra', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Nuevo registro', 'url'=>array('create')),
+	array('label'=>'Actualizar registro', 'url'=>array('update', 'id'=>$model->FECHA)),
+	array('label'=>'Eliminar registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->FECHA),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Infra #<?php echo $model->FECHA; ?></h1>
+<h1>Ver infraestructura de servicio #<?php echo $model->FECHA; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'FECHA',
-		'CODT',
-		'COD',
+		 array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
+                        array('up/view','id'=>$model->cOD->COD)),),
+                 array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
+		                  array('tipos/view','id'=>$model->cODT->CODT)),),
 		'ESTADO',
 	),
 )); ?>

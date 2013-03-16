@@ -3,19 +3,19 @@
 /* @var $model Infra */
 
 $this->breadcrumbs=array(
-	'Infras'=>array('index'),
+	'Infraestructura'=>array('index'),
 	$model->FECHA=>array('view','id'=>$model->FECHA),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Infra', 'url'=>array('index')),
-	array('label'=>'Create Infra', 'url'=>array('create')),
-	array('label'=>'View Infra', 'url'=>array('view', 'id'=>$model->FECHA)),
-	array('label'=>'Manage Infra', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Registara nuevo', 'url'=>array('create')),
+	array('label'=>'Ver registros', 'url'=>array('view', 'id'=>$model->FECHA)),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Infra <?php echo $model->FECHA; ?></h1>
+<h1>Actualizar registro de infraestructura : <?php echo $model->FECHA; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

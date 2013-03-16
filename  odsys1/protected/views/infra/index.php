@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Infras',
+	'Infraestructura',
 );
 
 $this->menu=array(
-	array('label'=>'Create Infra', 'url'=>array('create')),
-	array('label'=>'Manage Infra', 'url'=>array('admin')),
+	array('label'=>'Nuevo registro', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Infras</h1>
+<h1>Infraestructura de los servicios odontologicos</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

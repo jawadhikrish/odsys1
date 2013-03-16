@@ -3,19 +3,19 @@
 /* @var $model Supr */
 
 $this->breadcrumbs=array(
-	'Suprs'=>array('index'),
+	'Supervision'=>array('index'),
 	$model->REGISTRO=>array('view','id'=>$model->REGISTRO),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Supr', 'url'=>array('index')),
-	array('label'=>'Create Supr', 'url'=>array('create')),
-	array('label'=>'View Supr', 'url'=>array('view', 'id'=>$model->REGISTRO)),
-	array('label'=>'Manage Supr', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Nueva supervision', 'url'=>array('create')),
+	array('label'=>'Ver registros', 'url'=>array('view', 'id'=>$model->REGISTRO)),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Supr <?php echo $model->REGISTRO; ?></h1>
+<h1>Actualizar supervicion de servicio odontologico<?php echo $model->REGISTRO; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

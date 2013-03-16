@@ -47,7 +47,7 @@ o <b>=</b>) al comienzo de cada uno de los valores de su búsqueda para especifi
 	'columns'=>array(
 		'REGISTRO',
 		'FECHA',
-		'COD',
+		array('name'=>'COD','value'=>'$data->cOD->DES','type'=>'text',),
 		'HUA',
 		'HUC',
 		'HUCE',
