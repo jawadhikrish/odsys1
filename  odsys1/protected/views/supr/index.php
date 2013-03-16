@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Suprs</h1>
+<h1>Supervisiones a UP</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

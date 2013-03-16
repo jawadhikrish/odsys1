@@ -97,7 +97,7 @@ class Tipos extends CActiveRecord
 
 		$criteria->compare('CODT',$this->CODT);
 		$criteria->compare('TIPO',$this->TIPO,true);
-		$criteria->compare('DES',$this->DESC,true);
+		$criteria->compare('DES',$this->DES,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

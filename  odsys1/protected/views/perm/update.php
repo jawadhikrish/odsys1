@@ -3,19 +3,19 @@
 /* @var $model Perm */
 
 $this->breadcrumbs=array(
-	'Perms'=>array('index'),
+	'Permisos'=>array('index'),
 	$model->FECHA=>array('view','id'=>$model->FECHA),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Perm', 'url'=>array('index')),
-	array('label'=>'Create Perm', 'url'=>array('create')),
-	array('label'=>'View Perm', 'url'=>array('view', 'id'=>$model->FECHA)),
-	array('label'=>'Manage Perm', 'url'=>array('admin')),
+	array('label'=>'Listar Permisos', 'url'=>array('index')),
+	array('label'=>'Resgistrar Permiso', 'url'=>array('create')),
+	array('label'=>'Ver Permisos', 'url'=>array('view', 'id'=>$model->FECHA)),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Perm <?php echo $model->FECHA; ?></h1>
+<h1>Actualizar Permiso <?php echo $model->FECHA; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
