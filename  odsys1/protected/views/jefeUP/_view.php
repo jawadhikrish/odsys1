@@ -6,15 +6,15 @@
 <div class="view">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Cedula')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->CED), array('view', 'id'=>$data->CED,'idup'=>$data->COD)); ?>
+	<?php echo CHtml::link(CHtml::encode($data->cED->NOM), array('view', 'id'=>$data->CED,'idup'=>$data->COD)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Codigo')); ?>:</b>
-	<?php echo CHtml::encode($data->cOD->COD); ?>
+	<?php echo CHtml::encode($data->cOD->DES); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Codigo Tipo')); ?>:</b>
-	<?php echo CHtml::encode($data->cODT->CODT); ?>
+	<?php echo CHtml::encode($data->cODT->DES); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Poblacion')); ?>:</b>
