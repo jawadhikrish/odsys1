@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'Create Up', 'url'=>array('create')),
 	array('label'=>'Manage Up', 'url'=>array('admin')),
-	array('label'=>'Jefe UP', 'url'=>'/odsys1/index.php/JefeUP/index'),
+	array('label'=>'Jefe UP', 'url'=>array('JefeUP/index')),
 );
 ?>
 

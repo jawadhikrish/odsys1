@@ -21,19 +21,19 @@ $this->menu=array(
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
+        'data'=>$modelUp,
 	'attributes'=>array(
-		'CED',
-		'CODT',
-		'POB',
+                array( 'name'=>'CED','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cED->NOM),
+		                  array('pers/view','id'=>$model->cED->CED)),),
+		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
+		                  array('tipos/view','id'=>$model->cODT->CODT)),),
+                array( 'name'=>'POB','type'=>'raw','value'=>$model->POB),
+           
+                'DES',
 	),
 )); ?>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$modelUp,
-	'attributes'=>array(
-		'DES',
-	),
-)); ?>
+
 
 	
 
