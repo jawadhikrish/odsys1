@@ -28,8 +28,9 @@ $this->menu=array(
 		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
 		                  array('tipos/view','id'=>$model->cODT->CODT)),),
                 array( 'name'=>'POB','type'=>'raw','value'=>$model->POB),
-           
-                'DES',
+                array( 'name'=>'DES','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
+		                  array('pers/view','id'=>$model->cOD->DES)),),
+               
 	),
 )); ?>
 
