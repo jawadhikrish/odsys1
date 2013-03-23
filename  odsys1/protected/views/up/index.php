@@ -3,17 +3,17 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Ups',
+	'Unidad Programatica',
 );
 
 $this->menu=array(
-	array('label'=>'Create Up', 'url'=>array('create')),
-	array('label'=>'Manage Up', 'url'=>array('admin')),
+	array('label'=>'Nueva U.P', 'url'=>array('create')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 	array('label'=>'Jefe UP', 'url'=>array('JefeUP/index')),
 );
 ?>
 
-<h1>Ups</h1>
+<h1>Unidad Programatica</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -3,16 +3,16 @@
 /* @var $model Up */
 
 $this->breadcrumbs=array(
-	'Ups'=>array('index'),
-	'Create',
+	'Unidad Programatica'=>array('index'),
+	'Nueva',
 );
 
 $this->menu=array(
-	array('label'=>'List Up', 'url'=>array('index')),
-	array('label'=>'Manage Up', 'url'=>array('admin')),
+	array('label'=>'Listar U.P', 'url'=>array('index')),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Up</h1>
+<h1>Registrar Nueva  Unidad Programatica</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

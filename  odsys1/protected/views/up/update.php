@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Up', 'url'=>array('index')),
-	array('label'=>'Create Up', 'url'=>array('create')),
-	array('label'=>'View Up', 'url'=>array('view', 'id'=>$model->COD)),
-	array('label'=>'Manage Up', 'url'=>array('admin')),
+	array('label'=>'Listar U.P', 'url'=>array('index')),
+	array('label'=>'Nueva U.P', 'url'=>array('create')),
+	array('label'=>'Ver  U.P', 'url'=>array('view', 'id'=>$model->COD)),
+	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Up <?php echo $model->COD; ?></h1>
+<h1>Actualizar Unidad Programatica <?php echo $model->COD; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

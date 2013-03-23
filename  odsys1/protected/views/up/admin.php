@@ -3,13 +3,13 @@
 /* @var $model Up */
 
 $this->breadcrumbs=array(
-	'Ups'=>array('index'),
-	'Manage',
+	'Unidad Programatica'=>array('index'),
+	'Adminsitrar',
 );
 
 $this->menu=array(
-	array('label'=>'List Up', 'url'=>array('index')),
-	array('label'=>'Create Up', 'url'=>array('create')),
+	array('label'=>'Listar U.P', 'url'=>array('index')),
+	array('label'=>'Registrar U.P', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,14 +26,14 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Ups</h1>
+<h1>Administrar Unidad Programatica</h1>
 
 <p>
-SSi lo desea, puede introducir un operador de comparación (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+Si lo desea, puede introducir un operador de comparación (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
 o <b>=</b>) al comienzo de cada uno de los valores de su búsqueda para especificar cómo la comparación se debe hacer.
 </p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('Busqueda Avanzada','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
