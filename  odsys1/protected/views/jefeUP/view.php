@@ -3,7 +3,7 @@
 /* @var $model Upje */
 
 $this->breadcrumbs=array(
-	'Upjes'=>array('index'),
+	'Jefe de U:P'=>array('index'),
 	$model->CED,
 	$modelUp->COD,
 );
