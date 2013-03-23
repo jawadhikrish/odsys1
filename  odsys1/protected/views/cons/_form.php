@@ -49,7 +49,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CODT'); ?>
-               <?php echo $form->textField($model,'CODT'); ?>
+                <?php $list = ConsController::getRanklist();?>
+                <?php  echo CHtml::dropDownList("DES", null, $list, array("empty" => "Selecion Programa")); ?>
 		<?php echo $form->error($model,'CODT'); ?>
 	</div>
 
