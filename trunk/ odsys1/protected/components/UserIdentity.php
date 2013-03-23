@@ -16,18 +16,36 @@ class UserIdentity extends CUserIdentity
 	 * @return boolean whether authentication succeeds.
 	 */
 	public function authenticate()
-	{
-		$users=array(
+	{	
+	
+//entrada	
+	$formw= $_POST['LoginForm'];
+	
+	//BD
+	$user = array();
+	
+	$user = Users::model()->findByAttributes(
+	array('username'=>$formw['username'])
+	);
+
+	
+	/*$users=array(
 			// username => password
 			'demo'=>'demo',
 			'admin'=>'admin',
-		);
-		if(!isset($users[$this->username]))
+		);*/
+		if(!isset($user['username']))
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($users[$this->username]!==$this->password)
-			$this->errorCode=self::ERROR_PASSWORD_INVALID;
+	else{
+		if($user['password']!=$formw['password'])
+		{
+		$this->errorCode=self::ERROR_PASSWORD_INVALID;
+		}
 		else
-			$this->errorCode=self::ERROR_NONE;
-		return !$this->errorCode;
+		{
+		$this->errorCode=self::ERROR_NONE;
+		}
+			return !$this->errorCode;
+	}	
 	}
 }
