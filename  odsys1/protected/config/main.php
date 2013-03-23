@@ -12,7 +12,7 @@ return array(
 	'language'=>'es',
 	'sourceLanguage'=>'en',
 	'charset'=>'utf-8',
-	/*'defaultController'=>'site/login',*/
+	'defaultController'=>'site/login',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -99,7 +99,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost:3306;dbname=odsys1',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'chacon',
 			'charset' => 'utf8',
 		),
 		
