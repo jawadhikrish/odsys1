@@ -87,8 +87,8 @@
         <div class="dashIconText"><a href="#">poblacion</a></div>
     </div>
      <div class="dashIcon span-3">
-        <a href="/odsys/index.php/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-file.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Contratos</a></div>
+        <a href="/odsys/index.php/jefeUP/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-file.png" alt="System Alerts" /></a>
+        <div class="dashIconText"><a href="#">Jefes U.P.</a></div>
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/users/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-folder-person.png" alt="System Alerts" /></a>
