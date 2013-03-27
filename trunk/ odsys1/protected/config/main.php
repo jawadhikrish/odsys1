@@ -99,7 +99,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost:3306;dbname=odsys1',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => 'chacon',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		
