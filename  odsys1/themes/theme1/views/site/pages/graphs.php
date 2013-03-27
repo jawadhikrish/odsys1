@@ -8,14 +8,14 @@ $cs->registerScriptFile($baseUrl.'/js/pbs.init.js');
   
 $this->pageTitle=Yii::app()->name . ' - Graphs & Charts';
 $this->breadcrumbs=array(
-	'Graphs & Charts',
+	'Graficos',
 );
 ?>
-<h1>Graphs & Charts</h1>
+<h1>Graficos del servicio Odontologico</h1>
 
 <?php
 $this->beginWidget('zii.widgets.CPortlet', array(
-	'title'=>'<span class="icon icon-chart_bar">Column Chart</span>',
+	'title'=>'<span class="icon icon-chart_bar">SIVEO</span>',
 ));
 ?>
 <div class="chart1">
