@@ -29,7 +29,7 @@
     
     <div class="dashIcon span-3">
         <a href="/odsys/index.php/supr/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-clipboard.png" alt="Manage Prices" /></a>
-        <div class="dashIconText"><a href="#">Supervisi&oacute;n</a></div>
+        <div class="dashIconText"><a href="#">Horas</a></div>
     </div>
     
     <div class="dashIcon span-3">
@@ -96,7 +96,7 @@
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-flag.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Promocion</a></div>
+        <div class="dashIconText"><a href="#">Supervisi&oacute;n</a></div>
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-presentation.png" alt="System Alerts" /></a>

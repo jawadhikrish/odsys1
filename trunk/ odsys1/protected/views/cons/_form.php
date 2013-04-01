@@ -1,3 +1,4 @@
+
 <?php
 /* @var $this ConsController */
 /* @var $model Cons */
@@ -8,7 +9,7 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'cons-form',
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>FALSE,
 )); ?>
 
 	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
@@ -16,9 +17,9 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Registro'); ?>
+		<?php // echo $form->labelEx($model,'Registro',array('TYPE'=>"hidden")); ?>
 		<?php $lIDS =  ConsController::getLastId();
-                echo $form->textField($model,'Registro',array('readonly'=>'readonly', 'TYPE'=>"text",'value'=>$lIDS+1));  ?>
+                echo $form->textField($model,'Registro',array('readonly'=>'readonly', 'TYPE'=>"hidden",'value'=>$lIDS+1));  ?>
 		<?php echo $form->error($model,'Registro'); ?>
 	</div>
 
@@ -43,15 +44,14 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'COD'); ?>
-                <?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(), 'COD', 'COD'),array('empty' => ' Seleccione la U.P.')); ?>
+                <?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(array('condition'=>'REGION="CHOROTEGA"')), 'COD', 'DES'),array('empty' => ' Seleccione la U.P.')); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CODT'); ?>
-                <?php $list = ConsController::getRanklist();?>
-                <?php  echo CHtml::dropDownList("DES", null, $list, array("empty" => "Selecion Programa")); ?>
-		<?php echo $form->error($model,'CODT'); ?>
+                <?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="programa"')), 'CODT', 'DES'), array('empty'=>' Seleccione la U.P.')); ?>
+                <?php echo $form->error($model,'CODT'); ?>
 	</div>
 
 	<div class="row">

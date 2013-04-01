@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Nuevo registro', 'url'=>array('create')),
-	array('label'=>'Administrar', 'url'=>array('admin')),
+	array('label'=>'Buscar Registro', 'url'=>array('admin')),
 );
 ?>
 
