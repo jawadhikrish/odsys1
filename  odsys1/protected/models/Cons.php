@@ -94,13 +94,13 @@ class Cons extends CActiveRecord
 			'Registro' => 'Numero de registro',
 			'FECHA' => 'Fecha de registro',
 			'COD' => 'Unidad programatica',
-			'CODT' => 'Programa',
-			'C1VESALANO' => 'Consulta 1 Ves al ano',
-			'CSUBSECUENTE' => 'Consulta subsecuente',
-			'APREVENTIVA' => 'Accion preventiva',
-			'ACURATIVA' => 'Accion curativa',
-			'PROMHORAS' => 'Promocion Horas',
-			'PROMACTIV' => 'Promocion Actividades',
+			'CODT' => 'Programa de atención',
+			'C1VESALANO' => 'Consulta 1 Ves al año',
+			'CSUBSECUENTE' => 'Consultas subsecuentes',
+			'APREVENTIVA' => 'Acciones preventivas',
+			'ACURATIVA' => 'Acciones curativas',
+			'PROMHORAS' => 'Prevención colectiva actividades',
+			'PROMACTIV' => 'Actividades en promoción de la salud',
 		);
 	}
 
@@ -128,6 +128,12 @@ class Cons extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort'=>array(
+                                'defaultOrder'=>'COD ASC',
+                        ),
+                        'pagination'=>array(
+                                'pageSize'=>5
+                        ),
 		));
 	}
 }

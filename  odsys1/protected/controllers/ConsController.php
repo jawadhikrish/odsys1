@@ -31,12 +31,29 @@ class ConsController extends Controller
 
             if (!$rankList)
                 return array();
-
+            $rankArr='';
             foreach ($rankList as $thisRank) {
                 $rankArr[$thisRank['CODT']] = $thisRank['DES'];
             }
             return $rankArr;
          }
+         
+          /**
+         * Este metodo devuelve una lista con los datos de sentencia SQL
+         * @return List
+         */
+        
+        public function getProgramlist()
+        {
+            $sql = "select CODT,DES from tipos where tipo='programa'";
+            $list = Tipos::model()->findAllBySql($sql,$params=array(':TIPO'=>'programa'));
+           
+            //$list = Tipos::model()->findAll('TIPO = :TIPO ',array(':TIPO'=>'programa'));
+            $lista = CHtml::listData($list, 'CODT', 'DES');
+            foreach ($lista as $value => $descripcion) {
+            echo CHtml::tag('option',array('value'=>$value),CHtml::encode($descripcion), true);
+            }
+        }
          
          /**
          * Este metodo devuelve el ultimo registro de la tabla
