@@ -5,20 +5,22 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Registro')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->Registro), array('view', 'id'=>$data->Registro)); ?>
-	<br />
+	<!--<b><?php //echo CHtml::encode($data->getAttributeLabel('Registro')); ?></b>
+	<?php //echo CHtml::link(CHtml::encode($data->Registro), array('view', 'id'=>$data->Registro)); ?>
+	<br />-->
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('FECHA')); ?>:</b>
 	<?php echo CHtml::encode($data->FECHA); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('COD')); ?>:</b>
-	<?php echo CHtml::encode($data->cOD->DES); ?>
+	<?php echo CHtml::link(CHtml::encode($data->cOD->DES), array('view', 'id'=>$data->Registro)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CODT')); ?>:</b>
-	<?php echo CHtml::encode($data->cODT->DES); ?>
+        <?php echo CHtml::encode('Cod'); ?>:
+        <?php echo CHtml::encode($data->CODT); ?> - 
+	(<?php echo CHtml::link(CHtml::encode($data->cODT->DES), array('Tipos/view', 'id'=>$data->CODT)); ?>)
 	<br />
 
 	<b><?php /*echo CHtml::encode($data->getAttributeLabel('C1VESALANO')); ?>:</b>

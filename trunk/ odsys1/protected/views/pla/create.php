@@ -9,7 +9,8 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Listar plazas', 'url'=>array('index')),
-	array('label'=>'Administrar', 'url'=>array('admin')),
+        array('label'=>'Registrar Persona', 'url'=>array('pers/create')),
+	array('label'=>'Buscar Plazas', 'url'=>array('admin')),
 );
 ?>
 
