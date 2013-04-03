@@ -45,7 +45,7 @@ class Pla extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('PLA, INGRESO', 'required'),
+			array('PLA, INGRESO, HORAS', 'required'),
 			array('COD, CODT, HORAS', 'numerical', 'integerOnly'=>true),
 			array('PLA', 'length', 'max'=>100),
 			array('CED', 'length', 'max'=>50),

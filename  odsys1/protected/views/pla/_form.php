@@ -52,7 +52,9 @@
                     'model'=>$model,'value'=>$model->INGRESO,
                     'attribute'=>'INGRESO','flat'=>false,
                     'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'constrainInput'=>true,
-                        'showAnim'=>'slideDown','showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy-mm-dd',
+                        'showAnim'=>'slideDown','currentText'=>'Now',
+                       
+                        'showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy-mm-dd',
                     ),));
                 ?>
 		<?php echo $form->error($model,'INGRESO'); ?>
