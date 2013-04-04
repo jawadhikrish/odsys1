@@ -68,6 +68,7 @@
 				array('label'=>'Gráficos', 'url'=>array('/site/page', 'view'=>'graphs'),'itemOptions'=>array('class'=>'icon_chart'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Ayuda', 'url'=>array('/site/contact'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about'),'visible'=>!Yii::app()->user->isGuest),
+                                array('label'=>'Ajustes', 'url'=>array('/site/page', 'view'=>'ajust'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
 				/*array('label'=>'Form', 'url'=>array('/site/page', 'view'=>'forms')),
