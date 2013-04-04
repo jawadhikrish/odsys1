@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Siveo', 'url'=>array('create')),
-	array('label'=>'Manage Siveo', 'url'=>array('admin')),
+	array('label'=>'Registrar Siveo', 'url'=>array('create')),
+	array('label'=>'Buscar Siveo', 'url'=>array('admin')),
 );
 ?>
 

@@ -14,11 +14,11 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CODT')); ?>:</b>
-	<?php echo CHtml::encode($data->CODT); ?>
+	<?php echo CHtml::link(CHtml::encode($data->cODT->DES), array('tipos/view', 'id'=>$data->GRUPO)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('GRUPO')); ?>:</b>
-	<?php echo CHtml::encode($data->GRUPO); ?>
+	   <?php echo CHtml::link(CHtml::encode($data->cODT2->DES), array('tipos/view', 'id'=>$data->GRUPO)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('VALOR')); ?>:</b>

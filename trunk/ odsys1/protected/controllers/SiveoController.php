@@ -19,11 +19,48 @@ class SiveoController extends Controller
 		);
 	}
 
+        
+         /**
+         * Este metodo devuelve el ultimo registro de la tabla
+         * @return List
+         */
+        
+        public function getLastId()
+        {
+            $sql = "SELECT MAX(`registro`) AS id FROM siveo";
+            $dataReader= Yii::app()->db->CreateCommand($sql)->queryRow();
+            foreach($dataReader as $row) { 
+                return $row;
+                }
+        }
+        
+                 /**
+         * Este metodo devuelve una lista con los datos de sentencia SQL
+         * @return List
+         */
+        
+        public function getCode($parametro)
+        {
+            $sql = "select CODT,DES from tipos where tipo='$parametro'";
+            $rankList = Yii::app()->db->CreateCommand($sql)->queryAll();
+
+            if (!$rankList)
+                return array();
+            $rankArr='';
+            foreach ($rankList as $thisRank) {
+                $rankArr[$thisRank['CODT']] = $thisRank['DES'];
+            }
+            return $rankArr;
+         }
+        
+        
 	/**
 	 * Specifies the access control rules.
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
+
+         
 	public function accessRules()
 	{
 		return array(

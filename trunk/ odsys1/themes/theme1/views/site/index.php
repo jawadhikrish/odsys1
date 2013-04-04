@@ -43,11 +43,6 @@
     </div>
     
     <div class="dashIcon span-3">
-        <a href=""><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-barcode.png" alt="Products" /></a>
-        <div class="dashIconText"><a href="#">Productos</a></div>
-    </div>
-    
-    <div class="dashIcon span-3">
         <a href="/odsys/index.php/up/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-house2.png" alt="Contacts" /></a>
         <div class="dashIconText"><a href="#">U Programatica</a></div>
     </div>
@@ -98,10 +93,7 @@
         <a href="/odsys/index.php/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-flag.png" alt="System Alerts" /></a>
         <div class="dashIconText"><a href="#">Supervisi&oacute;n</a></div>
     </div>
-     <div class="dashIcon span-3">
-        <a href="/odsys/index.php/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-presentation.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Reuniones</a></div>
-    </div>
+
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/siveo/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chain2.png" alt="System Alerts" /></a>
         <div class="dashIconText"><a href="#">SIVEO</a></div>

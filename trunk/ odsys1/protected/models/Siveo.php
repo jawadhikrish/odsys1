@@ -12,6 +12,7 @@
  *
  * The followings are the available model relations:
  * @property Tipos $cODT
+ * @property Tipos $cODT2
  */
 class Siveo extends CActiveRecord
 {
@@ -41,7 +42,7 @@ class Siveo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('REGISTRO, FECHA', 'required'),
+			array('REGISTRO, FECHA, VALOR', 'required'),
 			array('REGISTRO, CODT, GRUPO', 'numerical', 'integerOnly'=>true),
 			array('FECHA', 'length', 'max'=>4),
 			array('VALOR', 'length', 'max'=>10),
@@ -60,6 +61,7 @@ class Siveo extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'cODT' => array(self::BELONGS_TO, 'Tipos', 'CODT'),
+                        'cODT2' => array(self::BELONGS_TO, 'Tipos', 'GRUPO'),
 		);
 	}
 
@@ -70,10 +72,10 @@ class Siveo extends CActiveRecord
 	{
 		return array(
 			'REGISTRO' => 'Registro',
-			'FECHA' => 'Fecha',
-			'CODT' => 'Codt',
-			'GRUPO' => 'Grupo',
-			'VALOR' => 'Valor',
+			'FECHA' => 'Año de registro',
+			'CODT' => 'Codigo tipo',
+			'GRUPO' => 'Grupo etario',
+			'VALOR' => 'Valor asignado',
 		);
 	}
 
@@ -96,6 +98,12 @@ class Siveo extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                    'sort'=>array(
+                                'defaultOrder'=>'COD ASC',
+                        ),
+                        'pagination'=>array(
+                                'pageSize'=>5
+                        ),
 		));
 	}
 }

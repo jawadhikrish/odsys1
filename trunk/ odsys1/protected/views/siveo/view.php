@@ -8,22 +8,23 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Siveo', 'url'=>array('index')),
-	array('label'=>'Create Siveo', 'url'=>array('create')),
-	array('label'=>'Update Siveo', 'url'=>array('update', 'id'=>$model->REGISTRO)),
-	array('label'=>'Delete Siveo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->REGISTRO),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Siveo', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Registrar nuevo', 'url'=>array('create')),
+	array('label'=>'Actualizar registro', 'url'=>array('update', 'id'=>$model->REGISTRO)),
+	array('label'=>'Eliminar registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->REGISTRO),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Buscar registros', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Siveo #<?php echo $model->REGISTRO; ?></h1>
+<h1>Detalles de siveo #<?php echo $model->REGISTRO; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'REGISTRO',
 		'FECHA',
-		'CODT',
+		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
+		                  array('tipos/view','id'=>$model->cODT->CODT)),),
 		'GRUPO',
 		'VALOR',
 	),
