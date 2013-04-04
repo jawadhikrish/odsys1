@@ -19,22 +19,22 @@
 <div class="dashboardIcons span-16">
     <div class="dashIcon span-3">
         <a href="/odsys/index.php/cons/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-inbox.png" alt="Inbox" /></a>
-        <div class="dashIconText "><a href="#">Consultas</a></div>
+        <div class="dashIconText "><a href="/odsys/index.php/cons/index">Consultas</a></div>
     </div>
     
     <div class="dashIcon span-3">
         <a href="/odsys/index.php/pers/index"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/big_icons/icon-contact2.png" alt="Order History" /></a>
-        <div class="dashIconText"><a href="#">Personas</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/pers/index">Personas</a></div>
     </div>
     
     <div class="dashIcon span-3">
         <a href="/odsys/index.php/supr/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-clipboard.png" alt="Manage Prices" /></a>
-        <div class="dashIconText"><a href="#">Horas</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/supr/index">Horas</a></div>
     </div>
     
     <div class="dashIcon span-3">
         <a href="/odsys/index.php/pla/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-people.png" alt="Customers" /></a>
-        <div class="dashIconText"><a href="#">Recurso Humano</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/pla/index">Recurso Humano</a></div>
     </div>
     
     <div class="dashIcon span-3">
@@ -44,59 +44,44 @@
     
     <div class="dashIcon span-3">
         <a href="/odsys/index.php/up/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-house2.png" alt="Contacts" /></a>
-        <div class="dashIconText"><a href="#">U Programatica</a></div>
-    </div>
-    
-    <div class="dashIcon span-3">
-        <a href="/odsys/index.php/tipos/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-gear.png" alt="Calendar" /></a>
-        <div class="dashIconText"><a href="#">Tipologia</a></div>
-    </div>
-    
-    <div class="dashIcon span-3">
-        <a href="/odsys/index.php/site/page?view=graphs"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chart-pie.png" alt="Trash" /></a>
-        <div class="dashIconText"><a href="#">Gr&aacute;ficos</a></div>
-    </div>
-    
+        <div class="dashIconText"><a href="/odsys/index.php/up/index">U Programatica</a></div>
+    </div>   
     <div class="dashIcon span-3">
         <a href="/odsys/index.php/ress/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-inbox2.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Referencias</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/ress/index">Referencias</a></div>
     </div>
     <div class="dashIcon span-3">
         <a href="/odsys/index.php/perm/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-write.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Permisos</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/perm/index">Permisos</a></div>
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/capi/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-up.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Capacidad I</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/capi/index">Capacidad I</a></div>
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/eqp/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-tools2.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Equipamiento</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/eqp/index">Equipamiento</a></div>
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/infra/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-house.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Infraestructura</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/infra/index">Infraestructura</a></div>
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/pob/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-people2.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">poblacion</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/pob/index">poblacion</a></div>
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/jefeUP/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-file.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Jefes U.P.</a></div>
-    </div>
-     <div class="dashIcon span-3">
-        <a href="/odsys/index.php/users/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-folder-person.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Usuarios</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/jefeUP/index">Jefes U.P.</a></div>
     </div>
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-flag.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">Supervisi&oacute;n</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/">Supervisi&oacute;n</a></div>
     </div>
 
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/siveo/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chain2.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="#">SIVEO</a></div>
+        <div class="dashIconText"><a href="/odsys/index.php/siveo/index">SIVEO</a></div>
     </div>
     
 </div><!-- END OF .dashIcons -->
