@@ -11,31 +11,48 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'REGISTRO'); ?>
-		<?php echo $form->textField($model,'REGISTRO'); ?>
+		<?php /* echo $form->labelEx($model,'REGISTRO');*/ ?>
+		<?php $lIDS = SiveoController::getLastId();
+                echo $form->textField($model,'REGISTRO',array('readonly'=>'readonly', 'TYPE'=>"hidden",'value'=>$lIDS+1));  ?>
 		<?php echo $form->error($model,'REGISTRO'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'FECHA'); ?>
-		<?php echo $form->textField($model,'FECHA',array('size'=>4,'maxlength'=>4)); ?>
+		
+                <?php
+                    /*
+                     * Esta funcion llama al componente zii.widgets.jui.CJuiDatePicker
+                     * Que depliega un calendario en la interface de usuario
+                     */
+                    $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                        'language'=>'es',
+                        'model'=>$model,'value'=>$model->FECHA,
+                        'attribute'=>'FECHA','flat'=>false,
+                        'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,
+                            'showAnim'=>'slideDown','currentText'=>'now',
+
+                            'showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy',
+                        ),));
+                    ?>
 		<?php echo $form->error($model,'FECHA'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CODT'); ?>
-		<?php echo $form->textField($model,'CODT'); ?>
+		<?php //echo $form->textField($model,'CODT'); ?>
+                <?php echo $form->dropDownList($model,'CODT', CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="SIVEO"')), 'CODT', 'DES'),array('empty' => ' Seleccione Tipo.')); ?>
 		<?php echo $form->error($model,'CODT'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'GRUPO'); ?>
-		<?php echo $form->textField($model,'GRUPO'); ?>
+		<?php echo $form->dropDownList($model,'GRUPO', CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Grupo Etario"')), 'CODT', 'DES'),array('empty' => ' Seleccione grupo.')); ?>
 		<?php echo $form->error($model,'GRUPO'); ?>
 	</div>
 
