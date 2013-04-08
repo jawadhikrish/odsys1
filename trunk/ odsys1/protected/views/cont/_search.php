@@ -12,11 +12,6 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'CON'); ?>
-		<?php echo $form->textField($model,'CON'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'PLA'); ?>
 		<?php echo $form->textField($model,'PLA',array('size'=>50,'maxlength'=>50)); ?>
 	</div>

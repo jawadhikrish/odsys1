@@ -5,12 +5,8 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('CON')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->CON), array('view', 'id'=>$data->CON)); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('PLA')); ?>:</b>
-	<?php echo CHtml::encode($data->PLA); ?>
+	<?php echo CHtml::link(CHtml::encode($data->PLA), array('view', 'id'=>$data->PLA)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('FEI')); ?>:</b>
@@ -33,11 +29,11 @@
 	<?php echo CHtml::encode($data->HADMINISTRATIVAS); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('HPROMOCION')); ?>:</b>
 	<?php echo CHtml::encode($data->HPROMOCION); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('HTRASLADO')); ?>:</b>
 	<?php echo CHtml::encode($data->HTRASLADO); ?>
 	<br />
