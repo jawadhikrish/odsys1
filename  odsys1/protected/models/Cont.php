@@ -4,7 +4,6 @@
  * This is the model class for table "cont".
  *
  * The followings are the available columns in table 'cont':
- * @property integer $CON
  * @property string $PLA
  * @property string $FEI
  * @property string $FEF
@@ -49,15 +48,14 @@ class Cont extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('CON', 'required'),
-			array('CON', 'numerical', 'integerOnly'=>true),
+			array('PLA', 'required'),
 			array('PLA', 'length', 'max'=>50),
 			array('HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS', 'length', 'max'=>10),
 			array('OBSERVACIONES', 'length', 'max'=>254),
 			array('FEI, FEF', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('CON, PLA, FEI, FEF, HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS, OBSERVACIONES', 'safe', 'on'=>'search'),
+			array('PLA, FEI, FEF, HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS, OBSERVACIONES', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -79,7 +77,6 @@ class Cont extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'CON' => 'Contrato',
 			'PLA' => 'Plaza',
 			'FEI' => 'Fecha ingreso',
 			'FEF' => 'Fecha finaliza',
@@ -89,7 +86,7 @@ class Cont extends CActiveRecord
 			'HPROMOCION' => 'Horas promocion',
 			'HTRASLADO' => 'Horas traslado',
 			'HCAPACITACION' => 'Horas capacitacion',
-			'HACTACADEMICAS' => 'Horas actacademicas',
+			'HACTACADEMICAS' => 'Hora act academicas',
 			'HOTROS' => 'Horas otros',
 			'OBSERVACIONES' => 'Observaciones',
 		);
@@ -106,7 +103,6 @@ class Cont extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('CON',$this->CON);
 		$criteria->compare('PLA',$this->PLA,true);
 		$criteria->compare('FEI',$this->FEI,true);
 		$criteria->compare('FEF',$this->FEF,true);
@@ -122,12 +118,6 @@ class Cont extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
-                    'sort'=>array(
-                                'defaultOrder'=>'CON ASC',
-                        ),
-                        'pagination'=>array(
-                                'pageSize'=>5
-                        ),
 		));
 	}
 }

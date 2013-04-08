@@ -8,7 +8,9 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('PLA')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->PLA), array('view', 'id'=>$data->PLA)); ?>
 	<br />
-
+        <b><?php echo CHtml::encode($data->getAttributeLabel('Contrato')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->PLA), array('Cont/view', 'id'=>$data->PLA)); ?>
+	<br />
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CED')); ?>:</b>
 	<?php echo CHtml::encode($data->cED->NOM); ?>
 	<br />

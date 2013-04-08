@@ -24,7 +24,7 @@ class ContController extends Controller
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
-	/*public function accessRules()
+	public function accessRules()
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
@@ -43,23 +43,7 @@ class ContController extends Controller
 				'users'=>array('*'),
 			),
 		);
-	}*/
-        /**
-	 * @return array action filters
-	 */
-	public function accessRules()
-	{
-		return array(
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','create','update','admin','delete','view'),
-				'users'=>array('@'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
 	}
-
 
 	/**
 	 * Displays a particular model.
@@ -87,7 +71,7 @@ class ContController extends Controller
 		{
 			$model->attributes=$_POST['Cont'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->CON));
+				$this->redirect(array('view','id'=>$model->PLA));
 		}
 
 		$this->render('create',array(
@@ -111,7 +95,7 @@ class ContController extends Controller
 		{
 			$model->attributes=$_POST['Cont'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->CON));
+				$this->redirect(array('view','id'=>$model->PLA));
 		}
 
 		$this->render('update',array(
