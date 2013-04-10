@@ -23,7 +23,6 @@ $this->menu=array(
 	'attributes'=>array(
 		'PLA',
 		'FEI',
-		'FEF',
 		'HCONTRATADAS',
 		'HCONSULTA',
 		'HADMINISTRATIVAS',

@@ -6,7 +6,6 @@
  * The followings are the available columns in table 'cont':
  * @property string $PLA
  * @property string $FEI
- * @property string $FEF
  * @property string $HCONTRATADAS
  * @property string $HCONSULTA
  * @property string $HADMINISTRATIVAS
@@ -52,10 +51,10 @@ class Cont extends CActiveRecord
 			array('PLA', 'length', 'max'=>50),
 			array('HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS', 'length', 'max'=>10),
 			array('OBSERVACIONES', 'length', 'max'=>254),
-			array('FEI, FEF', 'safe'),
+			array('FEI', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('PLA, FEI, FEF, HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS, OBSERVACIONES', 'safe', 'on'=>'search'),
+			array('PLA, FEI, HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS, OBSERVACIONES', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -79,7 +78,6 @@ class Cont extends CActiveRecord
 		return array(
 			'PLA' => 'Plaza',
 			'FEI' => 'Fecha ingreso',
-			'FEF' => 'Fecha finaliza',
 			'HCONTRATADAS' => 'Horas contratadas',
 			'HCONSULTA' => 'Horas consulta',
 			'HADMINISTRATIVAS' => 'Horas administrativas',
@@ -105,7 +103,6 @@ class Cont extends CActiveRecord
 
 		$criteria->compare('PLA',$this->PLA,true);
 		$criteria->compare('FEI',$this->FEI,true);
-		$criteria->compare('FEF',$this->FEF,true);
 		$criteria->compare('HCONTRATADAS',$this->HCONTRATADAS,true);
 		$criteria->compare('HCONSULTA',$this->HCONSULTA,true);
 		$criteria->compare('HADMINISTRATIVAS',$this->HADMINISTRATIVAS,true);
