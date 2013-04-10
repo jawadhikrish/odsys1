@@ -90,22 +90,26 @@ body
   background-color:#9b9b9b;
   
   /*background-image:url(../images/el_bg.png);*/
+
+  
   background-origin:initial;
   background-position:0 0;
   background-repeat:repeat no-repeat;
+  
   border-bottom-color:initial;
   border-bottom-style:none;
   border-bottom-width:initial;
   border-image:initial;
-  border-left-color:#222222;
+  border-left-color:#001d7e;
   border-left-style:solid;
   border-left-width:1px;
-  border-right-color:#222222;
+  border-right-color:#001d7e;
   border-right-style:solid;
   border-right-width:1px;
-  border-top-color:#222222;
+  border-top-color:#001d7e;
   border-top-style:solid;
   border-top-width:1px;
+  
   float:left;
   list-style-type:none;
   margin-bottom:0;

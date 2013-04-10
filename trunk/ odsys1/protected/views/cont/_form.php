@@ -28,12 +28,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'FEF'); ?>
-		<?php echo $form->textField($model,'FEF'); ?>
-		<?php echo $form->error($model,'FEF'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'HCONTRATADAS'); ?>
 		<?php echo $form->textField($model,'HCONTRATADAS',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'HCONTRATADAS'); ?>

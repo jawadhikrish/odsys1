@@ -13,10 +13,6 @@
 	<?php echo CHtml::encode($data->FEI); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('FEF')); ?>:</b>
-	<?php echo CHtml::encode($data->FEF); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('HCONTRATADAS')); ?>:</b>
 	<?php echo CHtml::encode($data->HCONTRATADAS); ?>
 	<br />
@@ -33,11 +29,11 @@
 	<?php echo CHtml::encode($data->HPROMOCION); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('HTRASLADO')); ?>:</b>
 	<?php echo CHtml::encode($data->HTRASLADO); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('HCAPACITACION')); ?>:</b>
 	<?php echo CHtml::encode($data->HCAPACITACION); ?>
 	<br />
