@@ -64,7 +64,7 @@
     
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index'),'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Home', 'url'=>array('/site/menu'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Gráficos', 'url'=>array('/site/page', 'view'=>'graphs'),'itemOptions'=>array('class'=>'icon_chart'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Ayuda', 'url'=>array('/site/contact'),'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Acerca de', 'url'=>array('/site/page', 'view'=>'about'),'visible'=>!Yii::app()->user->isGuest),
