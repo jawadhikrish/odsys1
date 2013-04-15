@@ -31,7 +31,16 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
+	
+	/**
+	 * 
+	 */
+	public function actionMenu()
+	{
+		$this->render('menu');
+	}
 
+	
 	/**
 	 * This is the action to handle external exceptions.
 	 */
@@ -92,7 +101,7 @@ class SiteController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect('/odsys/index.php/site/index');
+				$this->redirect('menu');
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
