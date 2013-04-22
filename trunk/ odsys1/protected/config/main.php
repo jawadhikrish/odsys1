@@ -12,7 +12,7 @@ return array(
 	'language'=>'es',
 	'sourceLanguage'=>'en',
 	'charset'=>'utf-8',
-	'defaultController'=>'site/login',
+	//'defaultController'=>'site/login',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
