@@ -72,6 +72,22 @@ class Cons extends CActiveRecord
             }
             return $rankArr;
          }
+         
+         /**
+         * getReportOne 
+         * Este metodo devuelve una lista con los datos de sentencia SQL
+         * la lista contiene las suma de cada columna de consultas.... revisar la logica
+         * @return List
+         */
+        public function getReportOne($cod)
+        {
+            return  $queryAll = Yii::app()->db->CreateCommand()
+                    ->select()
+                    ->from($this->model())
+                    ->where('COD=:id', array(':id'=>$cod))
+                    ->queryAll();
+             ;
+         }
 	/**
 	 * @return array relational rules.
 	 */
