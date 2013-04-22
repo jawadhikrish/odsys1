@@ -33,7 +33,7 @@
                 $this->widget('zii.widgets.jui.CJuiDatePicker', array(
                     'language'=>'es',
                     'model'=>$model,'value'=>$model->FECHA,
-                    'attribute'=>'FECHA','flat'=>false,
+                    'attribute'=>'FECHA','flat'=>false,  
                     'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'constrainInput'=>true,
                         'showAnim'=>'slideDown','showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy-mm-dd',
                     ),));

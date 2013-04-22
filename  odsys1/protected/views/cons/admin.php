@@ -40,7 +40,7 @@ o <b>=</b>) al principio de cada uno de sus valores de búsqueda para especifica
 )); ?>
 </div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
+<?php   $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'cons-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
@@ -62,3 +62,5 @@ o <b>=</b>) al principio de cada uno de sus valores de búsqueda para especifica
 		),
 	),
 )); ?>
+
+

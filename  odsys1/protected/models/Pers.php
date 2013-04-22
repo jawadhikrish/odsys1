@@ -33,7 +33,7 @@ class Pers extends CActiveRecord
 	{
 		return 'pers';
 	}
-
+        
 	/**
 	 * @return array validation rules for model attributes.
 	 */

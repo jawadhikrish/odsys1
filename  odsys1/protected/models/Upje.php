@@ -75,6 +75,7 @@ class Upje extends CActiveRecord
 			'COD' => 'Unidad Programatica',
 			'CODT' => 'Perfil',
 			'POB' => 'Poblacion',
+                        'DES' => 'Unidad Programatica',
 		);
 	}
 
