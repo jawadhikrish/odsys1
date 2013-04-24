@@ -21,6 +21,11 @@
  */
 class Cons extends CActiveRecord
 {
+	public $A;
+	public $C;
+	public $P;
+	public $TOTAL;
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -73,21 +78,8 @@ class Cons extends CActiveRecord
             return $rankArr;
          }
          
-         /**
-         * getReportOne 
-         * Este metodo devuelve una lista con los datos de sentencia SQL
-         * la lista contiene las suma de cada columna de consultas.... revisar la logica
-         * @return List
-         */
-        public function getReportOne($cod)
-        {
-            return  $queryAll = Yii::app()->db->CreateCommand()
-                    ->select()
-                    ->from($this->model())
-                    ->where('COD=:id', array(':id'=>$cod))
-                    ->queryAll();
-             ;
-         }
+
+         
 	/**
 	 * @return array relational rules.
 	 */
@@ -117,6 +109,10 @@ class Cons extends CActiveRecord
 			'ACURATIVA' => 'Acciones curativas',
 			'PROMHORAS' => 'Prevención colectiva actividades',
 			'PROMACTIV' => 'Actividades en promoción de la salud',
+			'C'=>'Consultas',
+			'A'=>'Acciones',
+			'P'=>'Promocion',
+			'TOTAL'=>'TOTAL',
 		);
 	}
 
@@ -133,8 +129,8 @@ class Cons extends CActiveRecord
 
 		$criteria->compare('Registro',$this->Registro);
 		$criteria->compare('FECHA',$this->FECHA,true);   
-                $criteria->compare('COD',$this->COD);
-                $criteria->compare('CODT',$this->CODT);
+        $criteria->compare('COD',$this->COD);
+        $criteria->compare('CODT',$this->CODT);
 		$criteria->compare('C1VESALANO',$this->C1VESALANO);
 		$criteria->compare('CSUBSECUENTE',$this->CSUBSECUENTE);
 		$criteria->compare('APREVENTIVA',$this->APREVENTIVA);
@@ -150,6 +146,23 @@ class Cons extends CActiveRecord
                         'pagination'=>array(
                                 'pageSize'=>5
                         ),
+		));
+	}
+	
+	/**
+	 * getReportOne
+	 * Este metodo devuelve una lista con los datos de sentencia SQL
+	 * la lista contiene las suma de cada columna de consultas.... revisar la logica
+	 * @return List
+	 */
+	public function getReportOne($cod) {
+	
+		$criteria=new CDbCriteria;
+		$criteria->select   = 'CODT, SUM(C1VESALANO + CSUBSECUENTE) AS C, SUM(APREVENTIVA + ACURATIVA) AS A, SUM(PROMHORAS + PROMACTIV) AS P, SUM(C1VESALANO + CSUBSECUENTE) + SUM(APREVENTIVA + ACURATIVA) + SUM(PROMHORAS + PROMACTIV) AS TOTAL';
+		$criteria->condition = "COD = '$cod'";
+		$criteria->compare('CODT',$this->CODT);
+		return new CActiveDataProvider($this, array(
+				'criteria'=>$criteria,
 		));
 	}
 }
