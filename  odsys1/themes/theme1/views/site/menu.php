@@ -38,8 +38,8 @@
     </div>
     
     <div class="dashIcon span-3">
-        <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chart.png" alt="Page" /></a>
-        <div class="dashIconText"><a href="#">Reportes</a></div>
+        <a href="/odsys/index.php/reports/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chart.png" alt="Page" /></a>
+        <div class="dashIconText"><a href="/odsys/index.php/reports/index">Reportes</a></div>
     </div>
     
     <div class="dashIcon span-3">
