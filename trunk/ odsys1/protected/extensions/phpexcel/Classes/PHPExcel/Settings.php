@@ -103,7 +103,7 @@ class PHPExcel_Settings
 	 *
 	 * @var string
 	 */
-	private static $_pdfRendererPath = 'C:/xampp/htdocs/Odsys/protected/extensions/phpexcel/Classes/PHPExcel/Writer/PDF/mPDF.php';
+	private static $_pdfRendererPath = 'C:\\xampp\\htdocs\\Odsys\\protected\\vendors\\mpdf\\';
 
 
 	/**
