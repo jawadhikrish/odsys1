@@ -1,7 +1,7 @@
 <?php 
 
 $this->menu=array(
-		array('label'=>'Generar PDF', 'url'=>array('reports')),
+		array('label'=>'Generar PDF', 'url'=>array('pdf','idCodt'=>$idCod)),
 		array('label'=>'Generar Excel', 'url'=>array('excel','idCodt'=>$idCod)),
 );
 ?>
@@ -47,6 +47,28 @@ $this->menu=array(
      'grid_mode'=>'export',
      'title'=>'Reporte1',
      'exportType'=>'Excel2007',
+     'autoWidth'=>false,
+	 'columns'=>array(
+		//array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
+		'CODT',
+		'C',
+		'A',
+		'P',
+		'TOTAL',
+	  ),
+));}
+?>
+
+	</div>
+	
+		<div>
+		<?php 
+	 if($pdf != 0){
+	 $this->widget('application.extensions.EExcelView', array(
+     'dataProvider'=>$model->getReportOne($pdf),
+     'grid_mode'=>'export',
+     'title'=>'Reporte1',
+     'exportType'=>'PDF',
      'autoWidth'=>false,
 	 'columns'=>array(
 		//array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
