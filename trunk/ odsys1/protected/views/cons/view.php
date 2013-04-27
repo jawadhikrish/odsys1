@@ -11,7 +11,7 @@ $this->menu=array(
 	array('label'=>'Listar registros', 'url'=>array('index')),
 	array('label'=>'Nuevo registro', 'url'=>array('create')),
 	array('label'=>'Actualizar registro', 'url'=>array('update', 'id'=>$model->Registro)),
-	array('label'=>'Eliminar Registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Registro),'confirm'=>'Are you sure you want to delete this item?')),
+	//array('label'=>'Eliminar Registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->Registro),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Administrar', 'url'=>array('admin')),
 );
 ?>
@@ -28,7 +28,7 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'Registro',
+		//'Registro',
 		'FECHA',
 		array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
                         array('up/view','id'=>$model->cOD->COD)),),
