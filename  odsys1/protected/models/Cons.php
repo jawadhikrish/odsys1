@@ -21,6 +21,7 @@
  */
 class Cons extends CActiveRecord
 {
+	public $D;
 	public $A;
 	public $C;
 	public $P;
@@ -109,6 +110,7 @@ class Cons extends CActiveRecord
 			'ACURATIVA' => 'Acciones curativas',
 			'PROMHORAS' => 'Prevención colectiva actividades',
 			'PROMACTIV' => 'Actividades en promoción de la salud',
+			'D'=>'Programa de atención',
 			'C'=>'Consultas',
 			'A'=>'Acciones',
 			'P'=>'Promocion',
@@ -158,8 +160,10 @@ class Cons extends CActiveRecord
 	public function getReportOne($cod) {
 	
 		$criteria=new CDbCriteria;
-		$criteria->select   = 'CODT, SUM(C1VESALANO + CSUBSECUENTE) AS C, SUM(APREVENTIVA + ACURATIVA) AS A, SUM(PROMHORAS + PROMACTIV) AS P, SUM(C1VESALANO + CSUBSECUENTE) + SUM(APREVENTIVA + ACURATIVA) + SUM(PROMHORAS + PROMACTIV) AS TOTAL';
+		$criteria->select   = 'DES AS D, SUM(C1VESALANO + CSUBSECUENTE) AS C, SUM(APREVENTIVA + ACURATIVA) AS A, SUM(PROMHORAS + PROMACTIV) AS P, SUM(C1VESALANO + CSUBSECUENTE) + SUM(APREVENTIVA + ACURATIVA) + SUM(PROMHORAS + PROMACTIV) AS TOTAL';
+		$criteria->join = 'INNER JOIN tipos ON t.CODT = tipos.CODT';
 		$criteria->condition = "COD = '$cod'";
+		$criteria->group = "t.CODT";
 		$criteria->compare('CODT',$this->CODT);
 		return new CActiveDataProvider($this, array(
 				'criteria'=>$criteria,
