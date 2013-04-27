@@ -60,6 +60,7 @@ class ReportsController extends Controller
 			$this->render('report1',array(
 					'model'=>$modelCons,
 					'idCod'=>$modelCons->COD,
+					'fecha'=>$modelCons->FECHA,
 					'excel'=>0,
 					'pdf'=>0,
 			));
@@ -68,6 +69,7 @@ class ReportsController extends Controller
 			$this->render('report1',array(
 					'model'=>$model,
 					'idCod'=>$modelCons->COD,
+					'fecha'=>$modelCons->FECHA,
 					'excel'=>0,
 					'pdf'=>0,
 			));
@@ -82,6 +84,7 @@ class ReportsController extends Controller
 			$this->render('report1',array(
 					'model'=>$model,
 					'idCod'=>$modelCons->COD,
+					'fecha'=>$modelCons->FECHA,
 					'excel'=>$idCodt,
 					'pdf'=>0,
 			));
@@ -94,6 +97,7 @@ class ReportsController extends Controller
 		$this->render('report1',array(
 				'model'=>$model,
 				'idCod'=>$modelCons->COD,
+				'fecha'=>$modelCons->FECHA,
 				'excel'=>0,
 				'pdf'=>$idCodt,
 		));
