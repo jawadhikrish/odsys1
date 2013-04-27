@@ -30,11 +30,9 @@ $this->menu=array(
 		<?php $this->widget('zii.widgets.grid.CGridView', array(
 				'id'=>'report-grid',
 				'dataProvider'=>$model->getReportOne($idCod),
-                                //'filter'=>$model,
 				'columns'=>array(
-                	//array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
-		'CODT',
-                'C',
+		'D',
+        'C',
 		'A',
 		'P',
 		'TOTAL',
@@ -52,8 +50,7 @@ $this->menu=array(
      'exportType'=>'Excel2007',
      'autoWidth'=>false,
 	 'columns'=>array(
-		//array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
-		'CODT',
+		'D',
 		'C',
 		'A',
 		'P',
@@ -74,8 +71,7 @@ $this->menu=array(
      'exportType'=>'PDF',
      'autoWidth'=>false,
 	 'columns'=>array(
-		//array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
-		'CODT',
+		'D',
 		'C',
 		'A',
 		'P',
