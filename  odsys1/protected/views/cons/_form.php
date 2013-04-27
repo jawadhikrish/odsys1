@@ -9,7 +9,7 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'cons-form',
-	'enableAjaxValidation'=>FALSE,
+	'enableAjaxValidation'=>true,
 )); ?>
 
 	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
@@ -50,7 +50,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CODT'); ?>
-                <?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="programa"')), 'CODT', 'DES'), array('empty'=>' Seleccione la U.P.')); ?>
+                <?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="programa"')), 'CODT', 'DES'), array('empty'=>' Seleccione programa de atención')); ?>
                 <?php echo $form->error($model,'CODT'); ?>
 	</div>
 

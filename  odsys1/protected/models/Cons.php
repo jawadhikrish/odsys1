@@ -53,7 +53,7 @@ class Cons extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Registro, FECHA', 'required'),
+			array('Registro, FECHA,COD, CODT, C1VESALANO, CSUBSECUENTE, APREVENTIVA, ACURATIVA, PROMHORAS, PROMACTIV', 'required'),
 			array('Registro, COD, CODT, C1VESALANO, CSUBSECUENTE, APREVENTIVA, ACURATIVA, PROMHORAS, PROMACTIV', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
