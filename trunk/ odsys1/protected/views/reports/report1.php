@@ -3,9 +3,11 @@
 $this->menu=array(
 		array('label'=>'Generar PDF', 'url'=>array('pdf','idCodt'=>$idCod)),
 		array('label'=>'Generar Excel', 'url'=>array('excel','idCodt'=>$idCod)),
+                array('label'=>'Volver al menu', 'url'=>array('site/menu')),
 );
 ?>
-
+<?php $this->pageTitle=Yii::app()->name; ?>
+<h1><?php echo CHtml::encode(Yii::app()->name); ?> Consultas de las unidades programaticas</h1>
 <div class="form">
 
 	<?php $form=$this->beginWidget('CActiveForm', array(
@@ -28,12 +30,11 @@ $this->menu=array(
 		<?php $this->widget('zii.widgets.grid.CGridView', array(
 				'id'=>'report-grid',
 				'dataProvider'=>$model->getReportOne($idCod),
+                                //'filter'=>$model,
 				'columns'=>array(
-		//array( 'name'=>'CODT','value'=>CHtml::encode($model->cODT->DES),),
-		
-		//array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
+                	//array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
 		'CODT',
-        'C',
+                'C',
 		'A',
 		'P',
 		'TOTAL',
