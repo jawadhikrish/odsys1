@@ -157,12 +157,13 @@ class Cons extends CActiveRecord
 	 * la lista contiene las suma de cada columna de consultas.... revisar la logica
 	 * @return List
 	 */
-	public function getReportOne($cod) {
+	public function getReportOne($cod,$fecha) {
 	
 		$criteria=new CDbCriteria;
 		$criteria->select   = 'DES AS D, SUM(C1VESALANO + CSUBSECUENTE) AS C, SUM(APREVENTIVA + ACURATIVA) AS A, SUM(PROMHORAS + PROMACTIV) AS P, SUM(C1VESALANO + CSUBSECUENTE) + SUM(APREVENTIVA + ACURATIVA) + SUM(PROMHORAS + PROMACTIV) AS TOTAL';
 		$criteria->join = 'INNER JOIN tipos ON t.CODT = tipos.CODT';
 		$criteria->condition = "COD = '$cod'";
+		$criteria->condition = "YEAR(FECHA) = YEAR('$fecha')";
 		$criteria->group = "t.CODT";
 		$criteria->compare('CODT',$this->CODT);
 		return new CActiveDataProvider($this, array(

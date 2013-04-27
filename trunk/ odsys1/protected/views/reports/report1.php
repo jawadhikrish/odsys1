@@ -21,6 +21,25 @@ $this->menu=array(
 		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(array('condition'=>'REGION="CHOROTEGA"')), 'COD', 'DES'),array('empty' => ' Seleccione la U.P.','value'=>0)); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'FECHA'); ?>
+                <?php
+                /*
+                 * Esta funcion llama al componente zii.widgets.jui.CJuiDatePicker
+                 * Que depliega un calendario en la interface de usuario
+                 */
+                $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'language'=>'es',
+                    'model'=>$model,'value'=>$model->FECHA,
+                    'attribute'=>'FECHA','flat'=>false,  
+                    'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'constrainInput'=>true,
+                        'showAnim'=>'slideDown','showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy-mm-dd',
+                    ),));
+                ?>
+		<?php // echo $form->textField($model,'FECHA');?>
+		<?php echo $form->error($model,'FECHA'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Ver Reporte'); ?>
@@ -29,7 +48,7 @@ $this->menu=array(
 	<div>
 		<?php $this->widget('zii.widgets.grid.CGridView', array(
 				'id'=>'report-grid',
-				'dataProvider'=>$model->getReportOne($idCod),
+				'dataProvider'=>$model->getReportOne($idCod,$fecha),
 				'columns'=>array(
 		'D',
         'C',
@@ -44,7 +63,7 @@ $this->menu=array(
 		<?php 
 	 if($excel != 0){
 	 $this->widget('application.extensions.EExcelView', array(
-     'dataProvider'=>$model->getReportOne($excel),
+     'dataProvider'=>$model->getReportOne($excel,$fecha),
      'grid_mode'=>'export',
      'title'=>'Reporte1',
      'exportType'=>'Excel2007',
@@ -65,7 +84,7 @@ $this->menu=array(
 		<?php 
 	 if($pdf != 0){
 	 $this->widget('application.extensions.EExcelView', array(
-     'dataProvider'=>$model->getReportOne($pdf),
+     'dataProvider'=>$model->getReportOne($pdf,$fecha),
      'grid_mode'=>'export',
      'title'=>'Reporte1',
      'exportType'=>'PDF',
