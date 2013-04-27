@@ -29,6 +29,8 @@ $this->menu=array(
 				'id'=>'report-grid',
 				'dataProvider'=>$model->getReportOne($idCod),
 				'columns'=>array(
+		//array( 'name'=>'CODT','value'=>CHtml::encode($model->cODT->DES),),
+		
 		//array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
 		'CODT',
         'C',
