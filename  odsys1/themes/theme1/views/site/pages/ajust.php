@@ -12,8 +12,8 @@ $this->breadcrumbs=array(
 <div class="dashboardIcons span-16">
     
      <div class="dashIcon span-3">
-        <a href="/odsys/index.php/site/index"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/big_icons/icon-redo.png" alt="Order History" /></a>
-        <div class="dashIconText"><a href="/odsys/index.php/site/index">Home</a></div>
+        <a href="/odsys/index.php/site/menu"><img src="<?php echo Yii::app()->theme->baseUrl;?>/images/big_icons/icon-redo.png" alt="Order History" /></a>
+        <div class="dashIconText"><a href="/odsys/index.php/site/menu">Home</a></div>
     </div>
     
     <div class="dashIcon span-3">

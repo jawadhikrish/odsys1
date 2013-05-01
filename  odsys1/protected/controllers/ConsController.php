@@ -165,9 +165,41 @@ class ConsController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Cons');
+                
+                                /*
+		*
+		*Linea de ejecucion libreria pdf
+		*http://www.yiiframework.com/extension/pdf
+		*
+		*/
+		if(isset($_GET['pdf'])){
+			$this->layout='//layouts/pdf';
+        $mPDF1 = Yii::app()->ePdf->mpdf();
+        $mPDF1->WriteHTML($this->render('index', array('dataProvider'=>$dataProvider),true));
+		$mPDF1->Output();
+		
+		}
+		
+		/*
+		*
+		*Genereador de excel usando la clase request
+		*
+		*/
+		if(isset($_GET['xls'])){
+		$model=Cons::model()->getReportOne($idCod,$fecha);
+		Yii::app()->request->sendFile('Cosultas1.xls',$this->renderPartial('excel',array('model'=>$model,),true));
+		}
+		/*
+                 */
+                
+                
+                
+                
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
+                
+
 	}
 
 	/**
