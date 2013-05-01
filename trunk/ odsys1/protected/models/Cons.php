@@ -128,11 +128,10 @@ class Cons extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
 		$criteria->compare('Registro',$this->Registro);
 		$criteria->compare('FECHA',$this->FECHA,true);   
-        $criteria->compare('COD',$this->COD);
-        $criteria->compare('CODT',$this->CODT);
+                $criteria->compare('COD',$this->COD);
+                $criteria->compare('CODT',$this->CODT);
 		$criteria->compare('C1VESALANO',$this->C1VESALANO);
 		$criteria->compare('CSUBSECUENTE',$this->CSUBSECUENTE);
 		$criteria->compare('APREVENTIVA',$this->APREVENTIVA);

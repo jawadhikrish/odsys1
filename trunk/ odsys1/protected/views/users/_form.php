@@ -1,3 +1,12 @@
+<script>
+    function select()
+        {
+                var sel_row=$.fn.yiiGridView.getSelection('pers-grid');
+                alert(sel_row);
+                $('#Users_CED').val(sel_row);
+        }
+</script>
+
 <?php
 /* @var $this UsersController */
 /* @var $model Users */
@@ -9,7 +18,9 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'users-form',
 	'enableAjaxValidation'=>false,
+    
 )); ?>
+    
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
@@ -23,7 +34,42 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CED'); ?>
-		<?php echo $form->textField($model,'CED',array('size'=>50,'maxlength'=>50)); ?>
+                <?php
+                    $modelPers=new Pers;
+                    $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+                        'id'=>'mydialog',
+                        // additional javascript options for the dialog plugin
+                        'options'=>array(
+                            'title'=>'Dialog box 1',
+                            'autoOpen'=>false,
+                        ),
+                            'htmlOptions'=>array(
+                                    'class'=>'shadowdialog'
+                        ),
+                    ));
+                       
+                        echo 'dialog content here';
+                        //$modelPers=new Pers;
+                        $this->widget('zii.widgets.grid.CGridView', array(
+                                    'id'=>'pers-grid',
+                                    'dataProvider'=>$modelPers->search(),
+                                    'filter'=>$modelPers,
+                             'selectionChanged'=>'select',
+                                    'columns'=>array(
+                                            'CED',
+                                            'NOM',
+                                    ),
+                            ));
+
+                    $this->endWidget('zii.widgets.jui.CJuiDialog');
+
+                    // the link that may open the dialog
+                    echo CHtml::link('Seleccione persona registrada', '#', array(
+                       'onclick'=>'$("#mydialog").dialog("open"); return false;',
+                    ));
+                     echo $form->textField($model,'CED',array('size'=>30,'maxlength'=>30)); 
+                    ?>
+            
 		<?php echo $form->error($model,'CED'); ?>
 	</div>
 

@@ -9,17 +9,17 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'cons-form',
-	'enableAjaxValidation'=>true,
+	'enableAjaxValidation'=>FALSE,
 )); ?>
 
 	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+        <div class="row">
 		<?php // echo $form->labelEx($model,'Registro',array('TYPE'=>"hidden")); ?>
 		<?php $lIDS =  ConsController::getLastId();
-                echo $form->textField($model,'Registro',array('readonly'=>'readonly', 'TYPE'=>"hidden",'value'=>$lIDS+1));  ?>
+                echo $form->textField($model,'Registro',array('readonly'=>'readonly','value'=>$lIDS+1));  ?>
 		<?php echo $form->error($model,'Registro'); ?>
 	</div>
 

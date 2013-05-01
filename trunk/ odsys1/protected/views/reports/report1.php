@@ -4,6 +4,9 @@ $this->menu=array(
 		array('label'=>'Generar PDF', 'url'=>array('pdf','idCodt'=>$idCod)),
 		array('label'=>'Generar Excel', 'url'=>array('excel','idCodt'=>$idCod)),
                 array('label'=>'Volver al menu', 'url'=>array('site/menu')),
+              
+        array('label'=>'Generar PDF 2', 'url'=>array('cons/index?pdf=1')),
+	array('label'=>'Generar Excel 2', 'url'=>array('cons/index?xls=1')),
 );
 ?>
 <?php $this->pageTitle=Yii::app()->name; ?>
@@ -51,7 +54,7 @@ $this->menu=array(
 				'dataProvider'=>$model->getReportOne($idCod,$fecha),
 				'columns'=>array(
 		'D',
-        'C',
+                'C',
 		'A',
 		'P',
 		'TOTAL',

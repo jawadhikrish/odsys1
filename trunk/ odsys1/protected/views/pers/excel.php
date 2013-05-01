@@ -9,17 +9,19 @@
 <?php if($model!==null){ ?>
 <table>
 <tr>
-<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>CEDULA</td>
-<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>NOMBRE</td>
-<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>TELEFONO</td>
-<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>EMAIL</td>
+<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>Programa</td>
+<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>Consultas</td>
+<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>Acciones</td>
+<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>Promoción</td>
+<td <?php echo "style='background-color:#CCC' style='color:#FFF'"; ?>>Total</td>
 </tr>
 <?php foreach($model as $user) {?>
 <tr <?php echo "style='background-color:#FFF'"; ?>>
-<td><?php echo $user->CED; ?></td>
-<td><?php echo $user->NOM; ?></td>
-<td><?php echo $user->TEL; ?></td>
-<td><?php echo $user->EMA;?></td>
+<td><?php echo $user->D; ?></td>
+<td><?php echo $user->C; ?></td>
+<td><?php echo $user->A; ?></td>
+<td><?php echo $user->P;?></td>
+<td><?php echo $user->TOTAL;?></td>
 </tr>
 <?php } ?>
 </table>
