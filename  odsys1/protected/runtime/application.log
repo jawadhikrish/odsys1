@@ -1275,3 +1275,14 @@ Stack trace:
 REQUEST_URI=/odsys/index.php/reports/report1
 HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/reports/index
 ---
+2013/05/06 07:17:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "pages" solicitada.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(270): CController->missingAction('pages')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('pages')
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pages/repo...')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/odsys/index.php/site/pages/reportes
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/site/menu
+---
