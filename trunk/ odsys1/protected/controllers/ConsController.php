@@ -1,5 +1,6 @@
 <?php
 
+
 class ConsController extends Controller
 {
 	/**
@@ -18,56 +19,7 @@ class ConsController extends Controller
 			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
-
-        /**
-         * Este metodo devuelve una lista con los datos de sentencia SQL
-         * @return List
-         */
         
-        public function getRanklist()
-        {
-            $sql = "select CODT,DES from tipos where tipo='programa'";
-            $rankList = Yii::app()->db->CreateCommand($sql)->queryAll();
-
-            if (!$rankList)
-                return array();
-            $rankArr='';
-            foreach ($rankList as $thisRank) {
-                $rankArr[$thisRank['CODT']] = $thisRank['DES'];
-            }
-            return $rankArr;
-         }
-         
-          /**
-         * Este metodo devuelve una lista con los datos de sentencia SQL
-         * @return List
-         */
-        
-        public function getProgramlist()
-        {
-            $sql = "select CODT,DES from tipos where tipo='programa'";
-            $list = Tipos::model()->findAllBySql($sql,$params=array(':TIPO'=>'programa'));
-           
-            //$list = Tipos::model()->findAll('TIPO = :TIPO ',array(':TIPO'=>'programa'));
-            $lista = CHtml::listData($list, 'CODT', 'DES');
-            foreach ($lista as $value => $descripcion) {
-            echo CHtml::tag('option',array('value'=>$value),CHtml::encode($descripcion), true);
-            }
-        }
-         
-         /**
-         * Este metodo devuelve el ultimo registro de la tabla
-         * @return List
-         */
-        
-        public function getLastId()
-        {
-            $sql = "SELECT MAX(`registro`) AS id FROM cons";
-            $dataReader= Yii::app()->db->CreateCommand($sql)->queryRow();
-            foreach($dataReader as $row) { 
-                return $row;
-                }
-         }
          
 	/**
 	 * Specifies the access control rules.
@@ -186,7 +138,7 @@ class ConsController extends Controller
 		*
 		*/
 		if(isset($_GET['xls'])){
-		$model=Cons::model()->getReportOne($idCod,$fecha);
+		$model=Cons::model()->getReportOne($cod,$fecha);
 		Yii::app()->request->sendFile('Cosultas1.xls',$this->renderPartial('excel',array('model'=>$model,),true));
 		}
 		/*

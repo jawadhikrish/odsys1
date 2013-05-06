@@ -28,8 +28,8 @@
     </div>
     
     <div class="dashIcon span-3">
-        <a href="/odsys/index.php/supr/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-clipboard.png" alt="Manage Prices" /></a>
-        <div class="dashIconText"><a href="/odsys/index.php/supr/index">Horas</a></div>
+        <a href="/odsys/index.php/cont/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-clipboard.png" alt="Manage Prices" /></a>
+        <div class="dashIconText"><a href="/odsys/index.php/cont/index">Horas Contratadas</a></div>
     </div>
     
     <div class="dashIcon span-3">
@@ -75,8 +75,8 @@
         <div class="dashIconText"><a href="/odsys/index.php/jefeUP/index">Jefes U.P.</a></div>
     </div>
      <div class="dashIcon span-3">
-        <a href="/odsys/index.php/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-flag.png" alt="System Alerts" /></a>
-        <div class="dashIconText"><a href="/odsys/index.php/">Supervisi&oacute;n</a></div>
+        <a href="/odsys/index.php/supr/index"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-flag.png" alt="System Alerts" /></a>
+        <div class="dashIconText"><a href="/odsys/index.php/supr/index">Supervisi&oacute;n</a></div>
     </div>
 
      <div class="dashIcon span-3">

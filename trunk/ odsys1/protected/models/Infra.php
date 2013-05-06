@@ -4,6 +4,7 @@
  * This is the model class for table "infra".
  *
  * The followings are the available columns in table 'infra':
+ * @property integer $Registro
  * @property string $FECHA
  * @property integer $CODT
  * @property integer $COD
@@ -41,12 +42,13 @@ class Infra extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('FECHA', 'required'),
-			array('CODT, COD', 'numerical', 'integerOnly'=>true),
+			array('Registro CODT, COD, ESTADO', 'required'),
+			array('Registro, CODT, COD', 'numerical', 'integerOnly'=>true),
 			array('ESTADO', 'length', 'max'=>50),
+			array('FECHA', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('FECHA, CODT, COD, ESTADO', 'safe', 'on'=>'search'),
+			array('Registro, FECHA, CODT, COD, ESTADO', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,10 +71,11 @@ class Infra extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'FECHA' => 'Fecha',
-			'CODT' => 'Codt',
-			'COD' => 'Cod',
-			'ESTADO' => 'Estado',
+			'Registro' => 'Registro',
+			'FECHA' => 'Fecha de registro',
+			'CODT' => 'Ubicación de la infraestructura',
+			'COD' => 'Unidad programatica',
+			'ESTADO' => 'Estado de la infraestructura',
 		);
 	}
 
@@ -87,6 +90,7 @@ class Infra extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('Registro',$this->Registro);
 		$criteria->compare('FECHA',$this->FECHA,true);
 		$criteria->compare('CODT',$this->CODT);
 		$criteria->compare('COD',$this->COD);
@@ -94,6 +98,27 @@ class Infra extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort'=>array(
+                               'defaultOrder'=>'CED ASC',
+                       ),
+                       'pagination'=>array(
+                               'pageSize'=>5
+                       ),
 		));
 	}
+        
+        /**
+         * Este metodo devuelve el ultimo registro de la tabla
+         * @return last id
+         */
+        
+        public function getLastId()
+        {
+            $sql = "SELECT MAX(`registro`) AS id FROM infra";
+            $dataReader= Yii::app()->db->CreateCommand($sql)->queryRow();
+            foreach($dataReader as $row) { 
+                return $row;
+                }
+        }
 }
+         

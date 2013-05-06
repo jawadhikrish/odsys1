@@ -25,7 +25,7 @@ $this->menu=array(
 		'NOM',
 		'TEL',
 		'EMA',
-                array( 'name'=>'PLA','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->plas->CODT),
-		                  array('pla/view','id'=>$model->plas->COD)),),
+               /* array( 'name'=>'PLA','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->plas->CODT),
+		                  array('pla/view','id'=>$model->plas->COD)),),*/
 	),
 )); ?>
