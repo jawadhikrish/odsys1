@@ -167,12 +167,7 @@ class Cons extends CActiveRecord
 		$criteria->compare('CODT',$this->CODT);
 		return new CActiveDataProvider($this, array(
 				'criteria'=>$criteria,
-                                'sort'=>array(
-                                       'defaultOrder'=>'CED ASC',
-                               ),
-                               'pagination'=>array(
-                                       'pageSize'=>5
-                               ),
+                               
 		));
 	}
         
