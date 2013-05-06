@@ -5,8 +5,6 @@ $this->breadcrumbs=array(
 );
 ?>
 <h1>Reportes</h1>
-
-<p>Area de reportes.</p>
     
      <div class="dashIcon span-3">
         <a href="/odsys/index.php/reports/report1"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-table.png" alt="Page" /></a>
