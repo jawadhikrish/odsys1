@@ -167,6 +167,46 @@ class Cons extends CActiveRecord
 		$criteria->compare('CODT',$this->CODT);
 		return new CActiveDataProvider($this, array(
 				'criteria'=>$criteria,
+                                'sort'=>array(
+                                       'defaultOrder'=>'CED ASC',
+                               ),
+                               'pagination'=>array(
+                                       'pageSize'=>5
+                               ),
 		));
 	}
+        
+          /**
+         * Este metodo devuelve el ultimo registro de la tabla
+         * @return Last id
+         */
+        
+        public function getLastId()
+        {
+            $sql = "SELECT MAX(`registro`) AS id FROM cons";
+            $dataReader= Yii::app()->db->CreateCommand($sql)->queryRow();
+            foreach($dataReader as $row) { 
+                return $row;
+                }
+        }
+         
+          
+          /**
+         * Este metodo devuelve una lista con los datos de sentencia SQL
+         * @return List
+         */
+        
+        public function getProgramlist()
+        {
+            $sql = "select CODT,DES from tipos where tipo='programa'";
+            $list = Tipos::model()->findAllBySql($sql,$params=array(':TIPO'=>'programa'));
+           
+            //$list = Tipos::model()->findAll('TIPO = :TIPO ',array(':TIPO'=>'programa'));
+            $lista = CHtml::listData($list, 'CODT', 'DES');
+            foreach ($lista as $value => $descripcion) {
+            echo CHtml::tag('option',array('value'=>$value),CHtml::encode($descripcion), true);
+            }
+        }
+
+      
 }

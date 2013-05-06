@@ -18,8 +18,8 @@
 
         <div class="row">
 		<?php // echo $form->labelEx($model,'Registro',array('TYPE'=>"hidden")); ?>
-		<?php $lIDS =  ConsController::getLastId();
-                echo $form->textField($model,'Registro',array('readonly'=>'readonly','value'=>$lIDS+1));  ?>
+		<?php $lIDS = Cons::model()->getLastId();
+               echo $form->textField($model,'Registro',array('readonly'=>'readonly','hidden'=>'true' ,'value'=>$lIDS+1));  ?>
 		<?php echo $form->error($model,'Registro'); ?>
 	</div>
 

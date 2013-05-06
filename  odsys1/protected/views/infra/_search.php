@@ -12,6 +12,11 @@
 )); ?>
 
 	<div class="row">
+		<?php echo $form->label($model,'Registro'); ?>
+		<?php echo $form->textField($model,'Registro'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'FECHA'); ?>
 		<?php echo $form->textField($model,'FECHA'); ?>
 	</div>

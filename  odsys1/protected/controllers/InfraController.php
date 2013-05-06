@@ -18,6 +18,7 @@ class InfraController extends Controller
 			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
+        
 
 	/**
 	 * Specifies the access control rules.
@@ -26,7 +27,7 @@ class InfraController extends Controller
 	 */
 	public function accessRules()
 	{
-		return array(
+            return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('index','create','update','admin','delete','view'),
 				'users'=>array('@'),
@@ -35,6 +36,26 @@ class InfraController extends Controller
 				'users'=>array('*'),
 			),
 		);
+            
+            
+            /*return array(
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('index','view'),
+				'users'=>array('*'),
+			),
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('create','update'),
+				'users'=>array('@'),
+			),
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('admin','delete'),
+				'users'=>array('admin'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+             */
 	}
 
 	/**
@@ -63,7 +84,7 @@ class InfraController extends Controller
 		{
 			$model->attributes=$_POST['Infra'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->FECHA));
+				$this->redirect(array('view','id'=>$model->Registro));
 		}
 
 		$this->render('create',array(
@@ -87,7 +108,7 @@ class InfraController extends Controller
 		{
 			$model->attributes=$_POST['Infra'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->FECHA));
+				$this->redirect(array('view','id'=>$model->Registro));
 		}
 
 		$this->render('update',array(

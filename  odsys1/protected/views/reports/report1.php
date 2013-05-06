@@ -66,7 +66,7 @@ $this->menu=array(
 		<?php 
 	 if($excel != 0){
 	 $this->widget('application.extensions.EExcelView', array(
-     'dataProvider'=>$model->getReportOne($excel,$fecha),
+     'dataProvider'=>$model->getReportOne($idCod,$fecha),
      'grid_mode'=>'export',
      'title'=>'Reporte1',
      'exportType'=>'Excel2007',
@@ -87,7 +87,7 @@ $this->menu=array(
 		<?php 
 	 if($pdf != 0){
 	 $this->widget('application.extensions.EExcelView', array(
-     'dataProvider'=>$model->getReportOne($pdf,$fecha),
+     'dataProvider'=>$model->getReportOne($idCod,$fecha),
      'grid_mode'=>'export',
      'title'=>'Reporte1',
      'exportType'=>'PDF',
