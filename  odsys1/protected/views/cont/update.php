@@ -3,16 +3,16 @@
 /* @var $model Cont */
 
 $this->breadcrumbs=array(
-	'Conts'=>array('index'),
+	'Contratos'=>array('index'),
 	$model->PLA=>array('view','id'=>$model->PLA),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Cont', 'url'=>array('index')),
-	array('label'=>'Create Cont', 'url'=>array('create')),
-	array('label'=>'View Cont', 'url'=>array('view', 'id'=>$model->PLA)),
-	array('label'=>'Manage Cont', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Nuevo registro', 'url'=>array('create')),
+	array('label'=>'Ver registros', 'url'=>array('view', 'id'=>$model->PLA)),
+	array('label'=>'Buscar registros', 'url'=>array('admin')),
 );
 ?>
 
