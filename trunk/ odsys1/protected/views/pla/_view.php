@@ -22,14 +22,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('CODT')); ?>:</b>
 	<?php echo CHtml::encode($data->cODT->DES); ?>
 	<br />
-        
-        <b><?php echo CHtml::encode($data->getAttributeLabel('INGRESO')); ?>:</b>
-	<?php echo CHtml::encode($data->INGRESO); ?>
-	<br />
-        
-        <b><?php echo CHtml::encode($data->getAttributeLabel('HORAS')); ?>:</b>
-	<?php echo CHtml::encode($data->HORAS); ?>
-	<br />
+
 
 
 </div>

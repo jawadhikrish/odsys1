@@ -31,15 +31,6 @@
 		<?php echo $form->textField($model,'CODT'); ?>
 	</div>
         
-        <div class="row">
-		<?php echo $form->label($model,'INGRESO'); ?>
-		<?php echo $form->textField($model,'INGRESO'); ?>
-	</div>
-    
-        <div class="row">
-		<?php echo $form->label($model,'HORAS'); ?>
-		<?php echo $form->textField($model,'HORAS'); ?>
-	</div>
     
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
