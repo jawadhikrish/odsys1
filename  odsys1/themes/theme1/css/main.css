@@ -282,8 +282,8 @@ div.search-form
 .portlet-decoration
 {
 	padding: 0px 0px;
-	background-color: #333;
-    background: url("../images/el_bg.png") repeat-x;
+	background-color: #001d7e;
+    /*background: url("../images/el_bg.png") repeat-x;*/
 }
 
 .portlet-title
