@@ -35,31 +35,31 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'COD'); ?>
-		 <?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(), 'COD', 'COD'),array('empty' => ' Seleccione la U.P.')); ?>
+		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(array('condition'=>'REGION="CHOROTEGA"')), 'COD', 'DES'),array('empty' => ' Seleccione la U.P.')); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'TOTAL'); ?>
-		<?php echo $form->textField($model,'TOTAL'); ?>
+		<?php echo $form->NumberField($model,'TOTAL', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'TOTAL'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'R1'); ?>
-		<?php echo $form->textField($model,'R1'); ?>
+		<?php echo $form->NumberField($model,'R1', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'R1'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'R2'); ?>
-		<?php echo $form->textField($model,'R2'); ?>
+		<?php echo $form->NumberField($model,'R2', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'R2'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'R3'); ?>
-		<?php echo $form->textField($model,'R3'); ?>
+		<?php echo $form->NumberField($model,'R3', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'R3'); ?>
 	</div>
 

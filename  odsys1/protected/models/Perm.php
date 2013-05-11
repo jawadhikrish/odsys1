@@ -43,7 +43,7 @@ class Perm extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('FECHA', 'required'),
+			array('FECHA, COD, CODT, ESTADO, CODRAYOSX, ESTADORAYOSX', 'required'),
 			array('COD, CODT, CODRAYOSX', 'numerical', 'integerOnly'=>true),
 			array('ESTADO, ESTADORAYOSX', 'length', 'max'=>50),
 			// The following rule is used by search().
@@ -71,12 +71,12 @@ class Perm extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'FECHA' => 'Fecha',
-			'COD' => 'Codigo de UP',
-			'CODT' => 'Tipo',
-			'ESTADO' => 'Estado',
-			'CODRAYOSX' => 'Cod rayos x',
-			'ESTADORAYOSX' => 'Estado rayos x',
+			'FECHA' => 'Fecha de regitro',
+			'COD' => 'Unidad programatica',
+			'CODT' => 'Tipo de establecimiento',
+			'ESTADO' => 'Estado del permiso',
+			'CODRAYOSX' => 'Cantidad de equipos rayos x',
+			'ESTADORAYOSX' => 'Estado del esquipo rayos x',
 		);
 	}
 

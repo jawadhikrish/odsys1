@@ -56,13 +56,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'C1VESALANO'); ?>
-		<?php echo $form->textField($model,'C1VESALANO'); ?>
+		<?php echo $form->NumberField($model,'C1VESALANO'); ?>
 		<?php echo $form->error($model,'C1VESALANO'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CSUBSECUENTE'); ?>
-		<?php echo $form->textField($model,'CSUBSECUENTE'); ?>
+		<?php echo $form->NumberField($model,'CSUBSECUENTE'); ?>
 		<?php echo $form->error($model,'CSUBSECUENTE'); ?>
 	</div>
 

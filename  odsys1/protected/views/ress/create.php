@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Listar Referencia', 'url'=>array('index')),
-	array('label'=>'Administar', 'url'=>array('admin')),
+	array('label'=>'Listar Referencias', 'url'=>array('index')),
+	array('label'=>'Buscar referencias', 'url'=>array('admin')),
 );
 ?>
 

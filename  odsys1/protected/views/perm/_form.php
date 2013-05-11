@@ -35,31 +35,31 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'COD'); ?>
-		 <?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(), 'COD', 'COD'),array('empty' => ' Seleccione la U.P.')); ?>
+		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(array('condition'=>'REGION="CHOROTEGA"')), 'COD', 'DES'),array('empty' => ' Seleccione la U.P.')); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CODT'); ?>
-		<?php echo $form->textField($model,'CODT'); ?>
+		<?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="infraestructura"')), 'CODT', 'DES'), array('empty'=>' Seleccione el tipo')); ?>
 		<?php echo $form->error($model,'CODT'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ESTADO'); ?>
-		<?php echo $form->textField($model,'ESTADO',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Estado"')), 'CODT', 'DES'), array('empty'=>' Seleccione el estado')); ?>
 		<?php echo $form->error($model,'ESTADO'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CODRAYOSX'); ?>
-		<?php echo $form->textField($model,'CODRAYOSX'); ?>
+		<?php echo $form->NumberField($model,'CODRAYOSX', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'CODRAYOSX'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ESTADORAYOSX'); ?>
-		<?php echo $form->textField($model,'ESTADORAYOSX',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Estado"')), 'CODT', 'DES'), array('empty'=>' Seleccione el estado')); ?>
 		<?php echo $form->error($model,'ESTADORAYOSX'); ?>
 	</div>
 

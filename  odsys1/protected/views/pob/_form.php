@@ -23,31 +23,43 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'COD'); ?>
-		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(), 'COD', 'COD'),array('empty' => ' Seleccione la U.P.')); ?>
+		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(array('condition'=>'REGION="CHOROTEGA"')), 'COD', 'DES'),array('empty' => ' Seleccione la U.P.')); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'GRU'); ?>
-		<?php echo $form->textField($model,'GRU',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->dropDownList($model,"GRU", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Grupo Etario"')), 'DES', 'DES'), array('empty'=>' Seleccione grupo')); ?>
 		<?php echo $form->error($model,'GRU'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'HOM'); ?>
-		<?php echo $form->textField($model,'HOM'); ?>
+		<?php echo $form->NumberField($model,'HOM', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'HOM'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'MUJ'); ?>
-		<?php echo $form->textField($model,'MUJ'); ?>
+		<?php echo $form->NumberField($model,'MUJ', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'MUJ'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ANO'); ?>
-		<?php echo $form->textField($model,'ANO',array('size'=>4,'maxlength'=>4)); ?>
+                <?php
+                /*
+                 * Esta funcion llama al componente zii.widgets.jui.CJuiDatePicker
+                 * Que depliega un calendario en la interface de usuario
+                 */
+                $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'language'=>'es',
+                    'model'=>$model,'value'=>$model->ANO,
+                    'attribute'=>'ANO','flat'=>false,  
+                    'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'constrainInput'=>true,
+                        'showAnim'=>'slideDown','showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy',
+                    ),));
+                ?>
 		<?php echo $form->error($model,'ANO'); ?>
 	</div>
 
