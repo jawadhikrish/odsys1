@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CED'); ?>
-		<?php echo $form->textField($model,'CED',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->dropDownList($model,'CED', CHtml::listData(Pers::model()->findAll(), 'CED', 'NOM'),array('empty' => ' Seleccione la persona')); ?>
 		<?php echo $form->error($model,'CED'); ?>
 	</div>
 

@@ -46,7 +46,7 @@ class Supr extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('REGISTRO, FECHA', 'required'),
+			array('REGISTRO, FECHA, COD, HUA, HUC, HUCE, HUPS, HUT, HUO, HUAC', 'required'),
 			array('REGISTRO, COD', 'numerical', 'integerOnly'=>true),
 			array('HUA, HUC, HUCE, HUPS, HUT, HUO, HUAC', 'length', 'max'=>10),
 			// The following rule is used by search().
@@ -110,6 +110,12 @@ class Supr extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                         'sort'=>array(
+                                'defaultOrder'=>'COD ASC',
+                        ),
+                        'pagination'=>array(
+                                'pageSize'=>5
+                        ),
 		));
 	}
 }
