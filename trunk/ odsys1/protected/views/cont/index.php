@@ -12,9 +12,28 @@ $this->menu=array(
 );
 ?>
 
-<h1>Conts</h1>
+<h1>Horas Contratadas</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
+<?php
+/*
+ * $this->widget('zii.widgets.CListView', array(
+ 
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+));
+ * 
+ */  
+ ?>
+
+<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'cont-grid',
+	'dataProvider'=>$dataProvider,
+	'columns'=>array(
+		'PLA',
+		'FEI',
+		'HCONTRATADAS',
+		array(
+			'class'=>'CButtonColumn',
+		),
+	),
 )); ?>
