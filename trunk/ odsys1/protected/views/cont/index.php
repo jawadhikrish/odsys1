@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Conts',
+	'Contratos',
 );
 
 $this->menu=array(
-	array('label'=>'Create Cont', 'url'=>array('create')),
-	array('label'=>'Manage Cont', 'url'=>array('admin')),
+	array('label'=>'Registrar horas', 'url'=>array('create')),
+	array('label'=>'Buscar registro', 'url'=>array('admin')),
 );
 ?>
 

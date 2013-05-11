@@ -12,7 +12,7 @@ $this->menu=array(
 	array('label'=>'Nuevo Equipo', 'url'=>array('create')),
 	array('label'=>'Actualizar Equipo', 'url'=>array('update', 'id'=>$model->PLACA)),
 	array('label'=>'Eliminar Equipo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->PLACA),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Administrar', 'url'=>array('admin')),
+	array('label'=>'Buscar equipo', 'url'=>array('admin')),
 );
 ?>
 

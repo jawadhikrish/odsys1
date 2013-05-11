@@ -3,16 +3,16 @@
 /* @var $model Cont */
 
 $this->breadcrumbs=array(
-	'Conts'=>array('index'),
-	'Create',
+	'Contratos'=>array('index'),
+	'Nuevo',
 );
 
 $this->menu=array(
-	array('label'=>'List Cont', 'url'=>array('index')),
-	array('label'=>'Manage Cont', 'url'=>array('admin')),
+	array('label'=>'Listar Contratos', 'url'=>array('index')),
+	array('label'=>'Buscar registros', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Cont</h1>
+<h1>Nuevo registro de horas contratadas</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

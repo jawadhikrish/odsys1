@@ -3,16 +3,18 @@
 /* @var $model Cont */
 
 $this->breadcrumbs=array(
-	'Conts'=>array('index'),
+	'Contratos'=>array('index'),
 	$model->PLA,
 );
 
 $this->menu=array(
-	array('label'=>'List Cont', 'url'=>array('index')),
-	array('label'=>'Create Cont', 'url'=>array('create')),
-	array('label'=>'Update Cont', 'url'=>array('update', 'id'=>$model->PLA)),
-	array('label'=>'Delete Cont', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->PLA),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Cont', 'url'=>array('admin')),
+        
+        array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Nuevo registro', 'url'=>array('create')),
+	array('label'=>'Ver registros', 'url'=>array('view', 'id'=>$model->PLA)),
+	array('label'=>'Buscar registros', 'url'=>array('admin')),
+	array('label'=>'Eliminar registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->PLA),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Buscar registro', 'url'=>array('admin')),
 );
 ?>
 
