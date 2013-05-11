@@ -99,7 +99,7 @@ class Siveo extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
                     'sort'=>array(
-                                'defaultOrder'=>'COD ASC',
+                                'defaultOrder'=>'CODT ASC',
                         ),
                         'pagination'=>array(
                                 'pageSize'=>5

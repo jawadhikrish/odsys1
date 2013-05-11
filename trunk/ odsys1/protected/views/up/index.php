@@ -29,6 +29,7 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'up-grid',
 	'dataProvider'=>$dataProvider,
+        
 	'columns'=>array(
 		'COD',
 		'DES',
