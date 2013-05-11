@@ -41,49 +41,49 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'COD'); ?>
-		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(), 'COD', 'COD'),array('empty' => ' Seleccione la U.P.')); ?>
+		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(array('condition'=>'REGION="CHOROTEGA"')), 'COD', 'DES'),array('empty' => ' Seleccione la U.P.')); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'HUA'); ?>
-		<?php echo $form->textField($model,'HUA',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->NumberField($model,'HUA',array('size'=>10,'maxlength'=>10,'empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'HUA'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'HUC'); ?>
-		<?php echo $form->textField($model,'HUC',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->NumberField($model,'HUC',array('size'=>10,'maxlength'=>10,'empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'HUC'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'HUCE'); ?>
-		<?php echo $form->textField($model,'HUCE',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->NumberField($model,'HUCE',array('size'=>10,'maxlength'=>10,'empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'HUCE'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'HUPS'); ?>
-		<?php echo $form->textField($model,'HUPS',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->NumberField($model,'HUPS',array('size'=>10,'maxlength'=>10,'empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'HUPS'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'HUT'); ?>
-		<?php echo $form->textField($model,'HUT',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->NumberField($model,'HUT',array('size'=>10,'maxlength'=>10,'empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'HUT'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'HUO'); ?>
-		<?php echo $form->textField($model,'HUO',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->NumberField($model,'HUO',array('size'=>10,'maxlength'=>10,'empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'HUO'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'HUAC'); ?>
-		<?php echo $form->textField($model,'HUAC',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->NumberField($model,'HUAC',array('size'=>10,'maxlength'=>10,'empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'HUAC'); ?>
 	</div>
 

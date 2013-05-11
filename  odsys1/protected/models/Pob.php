@@ -9,7 +9,7 @@
  * @property string $GRU
  * @property integer $HOM
  * @property integer $MUJ
- * @property string $AÑO
+ * @property string $ANO
  *
  * The followings are the available model relations:
  * @property Up $cOD
@@ -45,7 +45,7 @@ class Pob extends CActiveRecord
 			array('REGISTRO, COD, GRU, HOM, MUJ, ANO', 'required'),
 			array('REGISTRO, COD, HOM, MUJ', 'numerical', 'integerOnly'=>true),
 			array('GRU', 'length', 'max'=>20),
-			array('AÑO', 'length', 'max'=>4),
+			array('ANO', 'length', 'max'=>4),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('REGISTRO, COD, GRU, HOM, MUJ, ANO', 'safe', 'on'=>'search'),

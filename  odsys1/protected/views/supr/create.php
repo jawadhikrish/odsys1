@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Listar Supervisiones', 'url'=>array('index')),
-	array('label'=>'Administrar', 'url'=>array('admin')),
+	array('label'=>'Listar registros', 'url'=>array('index')),
+	array('label'=>'Buscar registros', 'url'=>array('admin')),
 );
 ?>
 
