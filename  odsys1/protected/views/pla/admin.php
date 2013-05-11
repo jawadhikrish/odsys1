@@ -49,8 +49,6 @@ o <b>=</b>)al comienzo de cada uno de los valores de su búsqueda para especific
 		'CED',
 		'COD',
 		'CODT',
-                'INGRESO',
-                'HORAS',
 		array(
 			'class'=>'CButtonColumn',
 		),

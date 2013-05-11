@@ -38,33 +38,7 @@
 		<?php echo $form->labelEx($model,'CODT'); ?>
 		<?php echo $form->dropDownList($model,'CODT', CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Perfil Plaza"')), 'CODT', 'DES'),array('empty' => ' Seleccione Perfil.')); ?>
 		<?php echo $form->error($model,'CODT'); ?>
-	</div>
-
-        <div class="row">
-		<?php echo $form->labelEx($model,'INGRESO'); ?>
-		<?php
-                /*
-                 * Esta funcion llama al componente zii.widgets.jui.CJuiDatePicker
-                 * Que depliega un calendario en la interface de usuario
-                 */
-                $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-                    'language'=>'es',
-                    'model'=>$model,'value'=>$model->INGRESO,
-                    'attribute'=>'INGRESO','flat'=>false,
-                    'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'constrainInput'=>true,
-                        'showAnim'=>'slideDown','currentText'=>'Now',
-                       
-                        'showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy-mm-dd',
-                    ),));
-                ?>
-		<?php echo $form->error($model,'INGRESO'); ?>
-	</div>
-        
-        <div class="row">
-		<?php echo $form->labelEx($model,'HORAS'); ?>
-		<?php echo $form->textField($model,'HORAS'); ?>
-		<?php echo $form->error($model,'HORAS'); ?>
-	</div>
+	</div>       
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
