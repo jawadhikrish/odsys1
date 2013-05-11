@@ -42,7 +42,7 @@ class Pob extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('REGISTRO', 'required'),
+			array('REGISTRO, COD, GRU, HOM, MUJ, ANO', 'required'),
 			array('REGISTRO, COD, HOM, MUJ', 'numerical', 'integerOnly'=>true),
 			array('GRU', 'length', 'max'=>20),
 			array('AÑO', 'length', 'max'=>4),

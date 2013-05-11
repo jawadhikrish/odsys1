@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Listar Perm', 'url'=>array('index')),
-	array('label'=>'Administrar', 'url'=>array('admin')),
+	array('label'=>'Listar Permisos', 'url'=>array('index')),
+	array('label'=>'Buscar permisos', 'url'=>array('admin')),
 );
 ?>
 

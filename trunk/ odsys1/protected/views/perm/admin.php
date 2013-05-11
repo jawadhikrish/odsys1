@@ -31,6 +31,7 @@ $('.search-form form').submit(function(){
 <p>
 Si lo desea, puede introducir un operador de comparación (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
 o <b>=</b>) al comienzo de cada uno de los valores de su búsqueda para especificar cómo la comparación se debe hacer.
+La busqueda solo se realiza con codigos, tenga presente conocer los codigos de Unidad programatica y tipos.
 </p>
 
 <?php echo CHtml::link('Busqueda avanzada','#',array('class'=>'search-button')); ?>

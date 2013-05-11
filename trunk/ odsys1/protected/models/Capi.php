@@ -41,7 +41,7 @@ class Capi extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('FECHA', 'required'),
+			array('FECHA, COD, INSTALADA, UTILIZADA, APROVECHAMIENTO', 'required'),
 			array('COD, INSTALADA, UTILIZADA, APROVECHAMIENTO', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -67,10 +67,10 @@ class Capi extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'FECHA' => 'Fecha',
-			'COD' => 'Cod',
-			'INSTALADA' => 'Instalada',
-			'UTILIZADA' => 'Utilizada',
+			'FECHA' => 'Fecha de registro',
+			'COD' => 'Unidad Programatica',
+			'INSTALADA' => 'Capacidad Instalada',
+			'UTILIZADA' => 'Capacidad Utilizada',
 			'APROVECHAMIENTO' => 'Aprovechamiento',
 		);
 	}
@@ -94,6 +94,12 @@ class Capi extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                     'sort'=>array(
+                                'defaultOrder'=>'COD ASC',
+                        ),
+                        'pagination'=>array(
+                                'pageSize'=>5
+                        ),
 		));
 	}
 }

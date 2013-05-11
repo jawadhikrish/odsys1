@@ -12,6 +12,4 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('DES')); ?>:</b>
 	<?php echo CHtml::encode($data->DES); ?>
 	<br />
-
-
 </div>

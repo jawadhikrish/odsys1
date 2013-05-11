@@ -70,12 +70,12 @@ class Ress extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'FECHA' => 'Fecha',
-			'COD' => 'U.P',
-			'TOTAL' => 'Total',
-			'R1' => 'Referencia 1',
-			'R2' => 'Referencia 2',
-			'R3' => 'Referencia 3',
+			'FECHA' => 'Fecha de registro',
+			'COD' => 'Unidad programatica',
+			'TOTAL' => 'Total de referencias',
+			'R1' => 'Referencia tipo 1',
+			'R2' => 'Referencia tipo 2',
+			'R3' => 'Referencia tipo 3',
 			'APROV' => 'Aprobacion',
 		);
 	}
@@ -101,6 +101,12 @@ class Ress extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort'=>array(
+                                'defaultOrder'=>'PLACA ASC',
+                        ),
+                        'pagination'=>array(
+                                'pageSize'=>5
+                        ),
 		));
 	}
 }

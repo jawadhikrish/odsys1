@@ -42,7 +42,7 @@ class Eqp extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('PLACA', 'required'),
+			array('PLACA, CODT, COD, ESTADO, FECHAREG', 'required'),
 			array('PLACA, CODT, COD', 'numerical', 'integerOnly'=>true),
 			array('ESTADO', 'length', 'max'=>50),
 			array('FECHAREG', 'safe'),
@@ -98,6 +98,12 @@ class Eqp extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                         'sort'=>array(
+                                'defaultOrder'=>'PLACA ASC',
+                        ),
+                        'pagination'=>array(
+                                'pageSize'=>5
+                        ),
 		));
 	}
 }
