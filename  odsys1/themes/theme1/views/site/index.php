@@ -4,19 +4,21 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<?php echo CHtml::encode(Yii::app()->user->name);?>
-
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+<?php
+        $this->widget('ext.slider.slider', array(
+            'container'=>'slideshow',
+            'width'=>910, 
+            'height'=>340, 
+            'timeout'=>6000,
+            'infos'=>true,
+            'constrainImage'=>true,
+            'images'=>array('01.jpg','02.jpg','03.jpg','04.jpg'),
+            'alts'=>array('First description','Second description','Third description','Four description'),
+            'defaultUrl'=>Yii::app()->request->hostInfo
+            )
+        );
+        ?>
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
