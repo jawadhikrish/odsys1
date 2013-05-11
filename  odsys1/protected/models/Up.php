@@ -104,6 +104,8 @@ class Up extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'sort'=>array('defaultOrder'=>'COD ASC'),
+                        'pagination'=>array('pageSize'=>4),
 		));
 	}
 }

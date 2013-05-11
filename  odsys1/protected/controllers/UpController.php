@@ -117,6 +117,8 @@ class UpController extends Controller
 		$dataProvider=new CActiveDataProvider('Up');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+                       
+                     
 		));
 	}
 

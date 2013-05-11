@@ -2180,3 +2180,31 @@ Stack trace:
 REQUEST_URI=/odsys/index.php/pob/create
 HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/pob/create
 ---
+2013/05/11 23:43:10 [error] [exception.CException] exception 'CException' with message 'Propiedad "CGridView"."pagination" no se encuentra definida.' in C:\EasyPHP-12.1\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('pagination', Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(UpController), 'zii.widgets.gri...', Array)
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\EasyPHP-12.1\www\Odsys\protected\views\up\index.php(40): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require('C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\EasyPHP-12.1...', Array, true)
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\EasyPHP-12.1...', Array, true)
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 C:\EasyPHP-12.1\www\Odsys\protected\controllers\UpController.php(122): CController->render('index', Array)
+#9 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): UpController->actionIndex()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('up/index')
+#20 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/odsys/index.php/up/index
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/site/menu
+---
