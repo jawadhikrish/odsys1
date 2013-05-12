@@ -4,7 +4,7 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<h1>Bienvenido a <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
 <?php
         $this->widget('ext.slider.slider', array(
@@ -15,8 +15,8 @@ $this->pageTitle=Yii::app()->name;
             'infos'=>true,
             'constrainImage'=>true,
             'images'=>array('01.jpg','02.jpg','03.jpg','04.jpg'),
-            'alts'=>array('First description','Second description','Third description','Four description'),
-            'defaultUrl'=>Yii::app()->request->hostInfo
+            'alts'=>array('Bienvenido a Odsys Manager System','Its your world, take control','Eduardo Bran Chacon','Joshua Briceño'),
+            'defaultUrl'=>'index.php/site/menu'
             )
         );
         ?>
