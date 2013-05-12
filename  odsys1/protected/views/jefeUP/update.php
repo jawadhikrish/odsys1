@@ -3,16 +3,16 @@
 /* @var $model Upje */
 
 $this->breadcrumbs=array(
-	'Upjes'=>array('index'),
+	'Jefes de Unidad Programatica'=>array('index'),
 	$model->CED=>array('view','id'=>$model->CED),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
 	array('label'=>'Listar Jefe U.P.', 'url'=>array('index')),
-	array('label'=>'Crear Jefe U.P.', 'url'=>array('create')),
+	array('label'=>'Nuevo Jefe U.P.', 'url'=>array('create')),
 	array('label'=>'Actualizar Jefe U.P.', 'url'=>array('view', 'id'=>$model->CED)),
-	array('label'=>'Administrar Jefe U.P.', 'url'=>array('admin')),
+	array('label'=>'Buscar Jefe U.P.', 'url'=>array('admin')),
 );
 ?>
 

@@ -3,13 +3,13 @@
 /* @var $model Tipos */
 
 $this->breadcrumbs=array(
-	'Tiposes'=>array('index'),
-	'Create',
+	'Tiposlogia'=>array('index'),
+	'Nuevo registro',
 );
 
 $this->menu=array(
-	array('label'=>'List Tipos', 'url'=>array('index')),
-	array('label'=>'Manage Tipos', 'url'=>array('admin')),
+	array('label'=>'Listar Tipos', 'url'=>array('index')),
+	array('label'=>'Buscar Tipos', 'url'=>array('admin')),
 );
 ?>
 
