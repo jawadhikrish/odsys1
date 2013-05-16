@@ -4,6 +4,7 @@
  * This is the model class for table "ress".
  *
  * The followings are the available columns in table 'ress':
+ * @property int $Registro
  * @property string $FECHA
  * @property integer $COD
  * @property integer $TOTAL
@@ -43,8 +44,8 @@ class Ress extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('FECHA', 'required'),
-			array('COD, TOTAL, R1, R2, R3', 'numerical', 'integerOnly'=>true),
+			array('Registro, FECHA,COD, TOTAL, R1, R2, R3, APROV', 'required'),
+			array('Registro, COD, TOTAL, R1, R2, R3', 'numerical', 'integerOnly'=>true),
 			array('APROV', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -70,6 +71,7 @@ class Ress extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+                        'Registro' => 'Registro',
 			'FECHA' => 'Fecha de registro',
 			'COD' => 'Unidad programatica',
 			'TOTAL' => 'Total de referencias',
@@ -90,7 +92,7 @@ class Ress extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->compare('Registro',$this->Registro,true);
 		$criteria->compare('FECHA',$this->FECHA,true);
 		$criteria->compare('COD',$this->COD);
 		$criteria->compare('TOTAL',$this->TOTAL);
@@ -102,7 +104,7 @@ class Ress extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
                         'sort'=>array(
-                                'defaultOrder'=>'PLACA ASC',
+                                'defaultOrder'=>'Registro ASC',
                         ),
                         'pagination'=>array(
                                 'pageSize'=>5

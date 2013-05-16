@@ -2431,3 +2431,130 @@ REQUEST_URI=/Odsys/index.php/cons/index
 in C:\EasyPHP-12.1\www\Odsys\protected\views\cons\index.php (43)
 in C:\EasyPHP-12.1\www\Odsys\protected\controllers\ConsController.php (152)
 in C:\EasyPHP-12.1\www\Odsys\index.php (13)
+2013/05/12 01:53:38 [error] [php] Undefined variable: model (C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\index.php:30)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(121): JefeUPController->render()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionIndex()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/index
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\index.php (30)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (121)
+in C:\EasyPHP-12.1\www\Odsys\index.php (13)
+2013/05/12 02:03:23 [error] [exception.CException] exception 'CException' with message 'Propiedad "CHttpRequest"."menu" no se encuentra definida.' in C:\EasyPHP-12.1\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\EasyPHP-12.1\www\Odsys\themes\theme1\views\site\index.php(19): CComponent->__get('menu')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require('C:\EasyPHP-12.1...')
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\EasyPHP-12.1...', NULL, true)
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\EasyPHP-12.1...', NULL, true)
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 C:\EasyPHP-12.1\www\Odsys\protected\controllers\SiteController.php(32): CController->render('index')
+#6 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/odsys/index.php
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/tipos/44
+---
+2013/05/12 02:04:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'La vista solicitada "menu" no fue encontrada.' in C:\EasyPHP-12.1\www\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('menu')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/odsys/index.php/site/page?view=menu
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php
+---
+2013/05/16 22:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "2013-05-09" solicitada.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(270): CController->missingAction('2013-05-09')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('2013-05-09')
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ress/2013-05-09')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/odsys/index.php/ress/2013-05-09
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/ress/create
+---
+2013/05/16 22:08:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PLACA' in 'order clause'. La sentencia SQL ejecutada fue: SELECT * FROM `ress` `t` ORDER BY PLACA ASC LIMIT 5.
+in C:\EasyPHP-12.1\www\Odsys\protected\views\ress\admin.php (60)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\RessController.php (135)
+in C:\EasyPHP-12.1\www\Odsys\index.php (13)
+2013/05/16 22:08:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'PLACA' in 'order clause'. The SQL statement executed was: SELECT * FROM `ress` `t` ORDER BY PLACA ASC LIMIT 5' in C:\EasyPHP-12.1\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\db\ar\CActiveRecord.php(1297): CDbCommand->queryAll()
+#2 C:\EasyPHP-12.1\www\yii\framework\db\ar\CActiveRecord.php(1416): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CActiveDataProvider.php(150): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#5 C:\EasyPHP-12.1\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#6 C:\EasyPHP-12.1\www\yii\framework\zii\widgets\grid\CGridView.php(314): CBaseListView->init()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(147): CGridView->init()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#9 C:\EasyPHP-12.1\www\Odsys\protected\views\ress\admin.php(60): CBaseController->widget('zii.widgets.gri...', Array)
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require('C:\EasyPHP-12.1...')
+#11 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\EasyPHP-12.1...', Array, true)
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\EasyPHP-12.1...', Array, true)
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 C:\EasyPHP-12.1\www\Odsys\protected\controllers\RessController.php(135): CController->render('admin', Array)
+#15 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): RessController->actionAdmin()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ress/admin')
+#26 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/odsys/index.php/ress/admin
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/ress/index
+---
+2013/05/16 22:09:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1116): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ress/delete/201...')
+#13 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/odsys/index.php/ress/delete/2013-05-09?ajax=ress-grid
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/ress/admin
+---
