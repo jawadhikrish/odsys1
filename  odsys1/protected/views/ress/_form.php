@@ -14,6 +14,12 @@
 	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'Registro'); ?>
+		<?php echo $form->NumberField($model,'Registro'); ?>
+		<?php echo $form->error($model,'Registro'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'FECHA'); ?>

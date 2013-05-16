@@ -63,7 +63,7 @@ class RessController extends Controller
 		{
 			$model->attributes=$_POST['Ress'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->FECHA));
+				$this->redirect(array('view','id'=>$model->Registro));
 		}
 
 		$this->render('create',array(
@@ -87,7 +87,7 @@ class RessController extends Controller
 		{
 			$model->attributes=$_POST['Ress'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->FECHA));
+				$this->redirect(array('view','id'=>$model->Registro));
 		}
 
 		$this->render('update',array(
