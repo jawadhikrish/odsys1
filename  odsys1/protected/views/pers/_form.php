@@ -41,7 +41,7 @@
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Aceptar'); ?>
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'index' : 'Cancelar'); ?>
+                <?php echo CHtml::button('Cancelar', array('submit' => array('index'))); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

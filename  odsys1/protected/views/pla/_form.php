@@ -57,7 +57,8 @@
 		<?php echo $form->error($model,'FEI'); ?>
 	</div>   
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save',array('confirm'=>'Seguro que desea realizar la transacción?')); ?>
+                 <?php echo CHtml::button('Cancelar', array('submit' => array('index'))); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
