@@ -29,10 +29,16 @@ $this->widget('zii.widgets.CListView', array(
 	'id'=>'upje-grid',
 	'dataProvider'=>$dataProvider,
 	'columns'=>array(
+                
+               array(
+                        'name'=>'Detalle',
+			'type' => 'raw',
+			'value' => 'CHtml::link(CHtml::encode("Ver"),array("view","id"=>$data->CED));'
+		),
                array(
                         'name'=>'CED',
 			'type' => 'raw',
-			'value' => 'CHtml::link(CHtml::encode($data->cED->NOM),array("view","id"=>$data->CED));'
+			'value' => 'CHtml::link(CHtml::encode($data->cED->NOM),array("pers/view","id"=>$data->CED));'
 		),
 		 array(
                         'name'=>'COD',

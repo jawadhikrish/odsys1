@@ -14,7 +14,6 @@ $this->menu=array(
 	array('label'=>'Ver registros', 'url'=>array('view', 'id'=>$model->PLA)),
 	array('label'=>'Buscar registros', 'url'=>array('admin')),
 	array('label'=>'Eliminar registro', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->PLA),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Buscar registro', 'url'=>array('admin')),
 );
 ?>
 

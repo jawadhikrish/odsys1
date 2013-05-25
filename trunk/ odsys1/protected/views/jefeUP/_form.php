@@ -23,13 +23,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'COD'); ?>
-		<?php echo $form->textField($model,'COD'); ?>
+		<?php echo $form->dropDownList($model,'COD', CHtml::listData(Up::model()->findAll(array('condition'=>'REGION="CHOROTEGA"')), 'COD', 'DES'),array('empty' => ' Seleccione la U.P.')); ?>
 		<?php echo $form->error($model,'COD'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CODT'); ?>
-		<?php echo $form->textField($model,'CODT'); ?>
+		<?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Tipo servicio"')), 'DES', 'DES'), array('empty'=>' Seleccione tipo de servicio')); ?>
 		<?php echo $form->error($model,'CODT'); ?>
 	</div>
 

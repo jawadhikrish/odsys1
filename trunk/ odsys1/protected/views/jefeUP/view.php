@@ -5,7 +5,7 @@
 $this->breadcrumbs=array(
 	'Jefe de U:P'=>array('index'),
 	$model->CED,
-	$modelUp->COD,
+	//$modelUp->COD,
 );
 
 $this->menu=array(
