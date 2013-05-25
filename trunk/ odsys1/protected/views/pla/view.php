@@ -28,5 +28,7 @@ $this->menu=array(
                         array('up/view','id'=>$model->cOD->COD)),),
 		array( 'name'=>'CODT','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cODT->DES),
 		                  array('tipos/view','id'=>$model->cODT->CODT)),),
+               'FEI',
+                
 	),
 )); ?>

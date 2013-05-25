@@ -56,37 +56,37 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'C1VESALANO'); ?>
-		<?php echo $form->NumberField($model,'C1VESALANO'); ?>
+		<?php echo $form->NumberField($model,'C1VESALANO', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'C1VESALANO'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'CSUBSECUENTE'); ?>
-		<?php echo $form->NumberField($model,'CSUBSECUENTE'); ?>
+		<?php echo $form->NumberField($model,'CSUBSECUENTE', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'CSUBSECUENTE'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'APREVENTIVA'); ?>
-		<?php echo $form->textField($model,'APREVENTIVA'); ?>
+		<?php echo $form->NumberField($model,'APREVENTIVA', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'APREVENTIVA'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ACURATIVA'); ?>
-		<?php echo $form->textField($model,'ACURATIVA'); ?>
+		<?php echo $form->NumberField($model,'ACURATIVA', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'ACURATIVA'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'PROMHORAS'); ?>
-		<?php echo $form->textField($model,'PROMHORAS'); ?>
+		<?php echo $form->NumberField($model,'PROMHORAS', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'PROMHORAS'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'PROMACTIV'); ?>
-		<?php echo $form->textField($model,'PROMACTIV'); ?>
+		<?php echo $form->NumberField($model,'PROMACTIV', array('empty'=>'','placeholder'=>'Solo numeros')); ?>
 		<?php echo $form->error($model,'PROMACTIV'); ?>
 	</div>
 

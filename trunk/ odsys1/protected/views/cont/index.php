@@ -30,8 +30,8 @@ $this->menu=array(
 	'dataProvider'=>$dataProvider,
 	'columns'=>array(
 		'PLA',
-		'FEI',
 		'HCONTRATADAS',
+                'OBSERVACIONES',
 		array(
 			'class'=>'CButtonColumn',
 		),

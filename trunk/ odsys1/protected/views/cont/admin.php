@@ -46,7 +46,6 @@ o <b>=</b>) al principio de cada uno de sus valores de búsqueda para especifica
 	'filter'=>$model,
 	'columns'=>array(
 		'PLA',
-		'FEI',
 		'HCONTRATADAS',
 		'HCONSULTA',
 		'HADMINISTRATIVAS',

@@ -9,10 +9,6 @@
 	<?php echo CHtml::link(CHtml::encode($data->PLA), array('view', 'id'=>$data->PLA)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('FEI')); ?>:</b>
-	<?php echo CHtml::encode($data->FEI); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('HCONTRATADAS')); ?>:</b>
 	<?php echo CHtml::encode($data->HCONTRATADAS); ?>
 	<br />
