@@ -8,6 +8,7 @@
  * @property string $CED
  * @property integer $COD
  * @property integer $CODT
+ * @property integer $FEI
  *
  * The followings are the available model relations:
  * @property Con[] $cons
@@ -43,13 +44,13 @@ class Pla extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('PLA, CED, COD, CODT', 'required'),
+			array('PLA, CED, COD, CODT, FEI', 'required'),
 			array('COD, CODT, ', 'numerical', 'integerOnly'=>true),
 			array('PLA', 'length', 'max'=>100),
-			array('CED', 'length', 'max'=>50),
+			array('CED, FEI', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('PLA, CED, COD, CODT', 'safe', 'on'=>'search'),
+			array('PLA, CED, COD, CODT, FEI', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -78,6 +79,7 @@ class Pla extends CActiveRecord
 			'CED' => 'Odontologo',
 			'COD' => 'Unidad Programatica',
 			'CODT' => 'Perfil de plaza',
+                        'FEI' => 'Fecha de ingreso',
 		);
 	}
 
@@ -96,6 +98,7 @@ class Pla extends CActiveRecord
 		$criteria->compare('CED',$this->CED,true);
 		$criteria->compare('COD',$this->COD);
 		$criteria->compare('CODT',$this->CODT);
+                $criteria->compare('FEI',$this->FEI);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -24,7 +24,6 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'PLA',
-		'FEI',
 		'HCONTRATADAS',
 		'HCONSULTA',
 		'HADMINISTRATIVAS',

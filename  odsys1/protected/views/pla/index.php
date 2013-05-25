@@ -30,6 +30,11 @@ $this->widget('zii.widgets.CListView', array(
 	'id'=>'pla-grid',
 	'dataProvider'=>$dataProvider,
 	'columns'=>array(
+              array(
+                        'name'=>'Ver',
+			'type' => 'raw',
+			'value' => 'CHtml::link(CHtml::encode("Ver"),array("view","id"=>$data->PLA));'
+		),
                 array(
                         'name'=>'PLA',
 			'type' => 'raw',
@@ -50,6 +55,6 @@ $this->widget('zii.widgets.CListView', array(
 			'type' => 'raw',
 			'value' => 'CHtml::link(CHtml::encode($data->cODT->DES),array("tipos/view","id"=>$data->CODT));'
 		),
-		
+		'FEI',
 	),
 )); ?>

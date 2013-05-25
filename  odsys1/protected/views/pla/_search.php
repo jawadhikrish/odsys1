@@ -13,12 +13,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'PLA'); ?>
-		<?php echo $form->textField($model,'PLA',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'PLA',array('size'=>20,'maxlength'=>20)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'CED'); ?>
-		<?php echo $form->textField($model,'CED',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->textField($model,'CED',array('size'=>20,'maxlength'=>20)); ?>
 	</div>
 
 	<div class="row">
@@ -29,6 +29,10 @@
 	<div class="row">
 		<?php echo $form->label($model,'CODT'); ?>
 		<?php echo $form->textField($model,'CODT'); ?>
+	</div>
+        <div class="row">
+		<?php echo $form->label($model,'FEI'); ?>
+		<?php echo $form->textField($model,'FEI'); ?>
 	</div>
         
     

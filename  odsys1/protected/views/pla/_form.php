@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'PLA'); ?>
-		<?php echo $form->textField($model,'PLA',array('size'=>37,'maxlength'=>50)); ?>
+                <?php echo $form->dropDownList($model,'PLA', CHtml::listData(Cont::model()->findAll(), 'PLA', 'PLA'),array('empty' => ' Seleccione la plaza')); ?>
 		<?php echo $form->error($model,'PLA'); ?>
 	</div>
 
@@ -39,8 +39,25 @@
 		<?php echo $form->dropDownList($model,'CODT', CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Perfil Plaza"')), 'CODT', 'DES'),array('empty' => ' Seleccione Perfil.')); ?>
 		<?php echo $form->error($model,'CODT'); ?>
 	</div>       
+        <div class="row">
+		<?php echo $form->labelEx($model,'FEI'); ?>
+		<?php
+                /*
+                 * Esta funcion llama al componente zii.widgets.jui.CJuiDatePicker
+                 * Que depliega un calendario en la interface de usuario
+                 */
+                $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                    'language'=>'es',
+                    'model'=>$model,'value'=>$model->FEI,
+                    'attribute'=>'FEI','flat'=>false,  
+                    'options'=>array('buttonImageOnly'=> true,'constrainInput'=>true,'constrainInput'=>true,
+                        'showAnim'=>'slideDown','showButtonPanel'=>'true','mode'=>'focus','dateFormat'=>'yy-mm-dd',
+                    ),));
+                ?>
+		<?php echo $form->error($model,'FEI'); ?>
+	</div>   
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -17,11 +17,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'FEI'); ?>
-		<?php echo $form->textField($model,'FEI'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'HCONTRATADAS'); ?>
 		<?php echo $form->textField($model,'HCONTRATADAS',array('size'=>10,'maxlength'=>10)); ?>
 	</div>

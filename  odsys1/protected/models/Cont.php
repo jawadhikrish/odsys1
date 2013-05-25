@@ -5,7 +5,6 @@
  *
  * The followings are the available columns in table 'cont':
  * @property string $PLA
- * @property string $FEI
  * @property string $HCONTRATADAS
  * @property string $HCONSULTA
  * @property string $HADMINISTRATIVAS
@@ -47,14 +46,13 @@ class Cont extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('PLA', 'required'),
+			array('PLA, HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS', 'required'),
 			array('PLA', 'length', 'max'=>50),
 			array('HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS', 'length', 'max'=>10),
 			array('OBSERVACIONES', 'length', 'max'=>254),
-			array('FEI', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('PLA, FEI, HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS, OBSERVACIONES', 'safe', 'on'=>'search'),
+			array('PLA, HCONTRATADAS, HCONSULTA, HADMINISTRATIVAS, HPROMOCION, HTRASLADO, HCAPACITACION, HACTACADEMICAS, HOTROS, OBSERVACIONES', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -77,7 +75,6 @@ class Cont extends CActiveRecord
 	{
 		return array(
 			'PLA' => 'Plaza',
-			'FEI' => 'Fecha ingreso',
 			'HCONTRATADAS' => 'Horas contratadas',
 			'HCONSULTA' => 'Horas consulta',
 			'HADMINISTRATIVAS' => 'Horas administrativas',
@@ -102,7 +99,6 @@ class Cont extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('PLA',$this->PLA,true);
-		$criteria->compare('FEI',$this->FEI,true);
 		$criteria->compare('HCONTRATADAS',$this->HCONTRATADAS,true);
 		$criteria->compare('HCONSULTA',$this->HCONSULTA,true);
 		$criteria->compare('HADMINISTRATIVAS',$this->HADMINISTRATIVAS,true);
