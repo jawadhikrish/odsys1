@@ -14,7 +14,13 @@
 	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'REGISTRO'); ?>
+		<?php echo $form->textField($model,'REGISTRO'); ?>
+		<?php echo $form->error($model,'REGISTRO'); ?>
+	</div>
+        
 	<div class="row">
 		<?php echo $form->labelEx($model,'FECHA'); ?>
 		<?php
@@ -58,7 +64,8 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
+                <?php echo CHtml::button('Cancelar', array('submit' => array('index'))); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

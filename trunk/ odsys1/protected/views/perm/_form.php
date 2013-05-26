@@ -15,6 +15,12 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
+        <div class="row">
+		<?php echo $form->labelEx($model,'REGISTRO'); ?>
+		<?php echo $form->textField($model,'REGISTRO'); ?>
+		<?php echo $form->error($model,'REGISTRO'); ?>
+	</div>
+        
 	<div class="row">
 		<?php echo $form->labelEx($model,'FECHA'); ?>
 		<?php
@@ -47,7 +53,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ESTADO'); ?>
-		<?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Estado"')), 'CODT', 'DES'), array('empty'=>' Seleccione el estado')); ?>
+		<?php echo $form->dropDownList($model,"ESTADO", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Estado"')), 'CODT', 'DES'), array('empty'=>' Seleccione el estado')); ?>
 		<?php echo $form->error($model,'ESTADO'); ?>
 	</div>
 
@@ -59,12 +65,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'ESTADORAYOSX'); ?>
-		<?php echo $form->dropDownList($model,"CODT", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Estado"')), 'CODT', 'DES'), array('empty'=>' Seleccione el estado')); ?>
+		<?php echo $form->dropDownList($model,"ESTADORAYOSX", CHtml::listData(Tipos::model()->findAll(array('condition'=>'tipo="Estado"')), 'CODT', 'DES'), array('empty'=>' Seleccione el estado')); ?>
 		<?php echo $form->error($model,'ESTADORAYOSX'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Aceptar'); ?>
+                <?php echo CHtml::button('Cancelar', array('submit' => array('index'))); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

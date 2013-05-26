@@ -2558,3 +2558,1028 @@ Stack trace:
 REQUEST_URI=/odsys/index.php/ress/delete/2013-05-09?ajax=ress-grid
 HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/ress/admin
 ---
+2013/05/18 21:07:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "Editar46" solicitada.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(270): CController->missingAction('Editar46')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('Editar46')
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pers/Editar46')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/odsys/index.php/pers/Editar46
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/pers/index
+---
+2013/05/25 20:46:06 [error] [exception.CException] exception 'CException' with message 'Propiedad "CButtonColumn"."name" no se encuentra definida.' in C:\EasyPHP-12.1\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(220): CComponent->__set('name', 'Opciones')
+#1 C:\EasyPHP-12.1\www\yii\framework\zii\widgets\grid\CGridView.php(363): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\EasyPHP-12.1\www\yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\EasyPHP-12.1\www\Odsys\protected\views\pla\admin.php(58): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require('C:\EasyPHP-12.1...')
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\EasyPHP-12.1...', Array, true)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\EasyPHP-12.1...', Array, true)
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\EasyPHP-12.1\www\Odsys\protected\controllers\PlaController.php(135): CController->render('admin', Array)
+#11 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): PlaController->actionAdmin()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pla/admin')
+#22 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/odsys/index.php/pla/admin
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/pla/12647
+---
+2013/05/25 20:46:32 [error] [exception.CException] exception 'CException' with message 'Propiedad "CButtonColumn"."0" no se encuentra definida.' in C:\EasyPHP-12.1\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(220): CComponent->__set('0', Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\zii\widgets\grid\CGridView.php(363): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\EasyPHP-12.1\www\yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\EasyPHP-12.1\www\Odsys\protected\views\pla\admin.php(58): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require('C:\EasyPHP-12.1...')
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\EasyPHP-12.1...', Array, true)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\EasyPHP-12.1...', Array, true)
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\EasyPHP-12.1\www\Odsys\protected\controllers\PlaController.php(135): CController->render('admin', Array)
+#11 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): PlaController->actionAdmin()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pla/admin')
+#22 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/odsys/index.php/pla/admin
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/pla/12647
+---
+2013/05/25 20:47:08 [error] [exception.CException] exception 'CException' with message 'Propiedad "CDataColumn"."0" no se encuentra definida.' in C:\EasyPHP-12.1\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(220): CComponent->__set('0', Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\zii\widgets\grid\CGridView.php(363): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\EasyPHP-12.1\www\yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\EasyPHP-12.1\www\Odsys\protected\views\pla\admin.php(58): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require('C:\EasyPHP-12.1...')
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\EasyPHP-12.1...', Array, true)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\EasyPHP-12.1...', Array, true)
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\EasyPHP-12.1\www\Odsys\protected\controllers\PlaController.php(135): CController->render('admin', Array)
+#11 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): PlaController->actionAdmin()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pla/admin')
+#22 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/odsys/index.php/pla/admin
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/pla/12647
+---
+2013/05/25 21:01:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\EasyPHP-12.1\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cont/admin')
+#9 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/odsys/index.php/cont/admin
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/cont/create
+---
+2013/05/25 21:01:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\EasyPHP-12.1\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('cont/admin')
+#9 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/odsys/index.php/cont/admin
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/cont/create
+---
+2013/05/25 23:23:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:25:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:25:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/184000568306
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:26:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:26:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/501860967
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:27:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:28:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/501860967
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:28:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/106590745
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:29:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:29:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/105950886
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/index
+---
+2013/05/25 23:30:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/105950886
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/index
+---
+2013/05/25 23:32:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/index
+---
+2013/05/25 23:32:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/401500137
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/index
+---
+2013/05/25 23:32:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/401500137
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/index
+---
+2013/05/25 23:33:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/index
+---
+2013/05/25 23:35:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUp/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUp/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/index
+---
+2013/05/25 23:35:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/admin
+---
+2013/05/25 23:36:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/104880325
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/jefeUP/admin
+---
+2013/05/25 23:36:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUp/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUp/105950886
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:37:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUp/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUp/105950886
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:37:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUp/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUp/401140359
+---
+2013/05/25 23:37:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUp/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUp/105950886
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:40:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/view')
+#10 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/184000568306
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/25 23:42:58 [error] [exception.CException] exception 'CException' with message 'Propiedad "Upje"."GRU" no se encuentra definida.' in C:\EasyPHP-12.1\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('GRU')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('GRU')
+#2 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(1565): CHtml::resolveValue(Object(Upje), 'GRU')
+#3 C:\EasyPHP-12.1\www\yii\framework\web\widgets\CActiveForm.php(763): CHtml::activeDropDownList(Object(Upje), 'GRU', Array, Array)
+#4 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(32): CActiveForm->dropDownList(Object(Upje), 'GRU', Array, Array)
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require('C:\EasyPHP-12.1...')
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\EasyPHP-12.1...', Array, true)
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\EasyPHP-12.1...', Array, true)
+#8 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): CController->renderPartial('_form', Array)
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require('C:\EasyPHP-12.1...')
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\EasyPHP-12.1...', Array, true)
+#11 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\EasyPHP-12.1...', Array, true)
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#13 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): CController->render('create', Array)
+#14 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#24 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('jefeUP/create')
+#25 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#26 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/odsys/index.php/jefeUP/create
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/JefeUP/index
+---
+2013/05/26 00:00:42 [error] [php] Illegal string offset 'type' (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:483)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#11 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:02:43 [error] [php] array_key_exists() expects parameter 2 to be array, string given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:441)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#3 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#8 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:04:51 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): button()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#11 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:09:21 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(484): button()
+#3 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): submitButton()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#7 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#11 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#12 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#23 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:10:17 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(484): button()
+#3 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): submitButton()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#7 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#11 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#12 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#23 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#25 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:13:32 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): button()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#11 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:13:41 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): button()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#11 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:15:04 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): button()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#11 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:15:12 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): button()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#11 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:15:44 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): button()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#11 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:16:30 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): button()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#11 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 00:17:26 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\helpers\CHtml.php(449): tag()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php(44): button()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#6 C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php(18): JefeUPController->renderPartial()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(126): require()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CBaseController.php(95): JefeUPController->renderInternal()
+#9 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): JefeUPController->renderFile()
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): JefeUPController->renderPartial()
+#11 C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php(72): JefeUPController->render()
+#12 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): JefeUPController->actionCreate()
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): JefeUPController->runAction()
+#15 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): JefeUPController->filterAccessControl()
+#18 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): JefeUPController->runActionWithFilters()
+#21 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): JefeUPController->run()
+#22 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#24 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/jefeUP/create
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\_form.php (44)
+in C:\EasyPHP-12.1\www\Odsys\protected\views\jefeUP\create.php (18)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\JefeUPController.php (72)
+2013/05/26 02:46:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "2013-05-30" solicitada.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(270): CController->missingAction('2013-05-30')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('2013-05-30')
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('capi/2013-05-30')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/odsys/index.php/capi/2013-05-30
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/capi/create
+---
+2013/05/26 02:47:51 [error] [system.db.CDbCommand] CDbCommand::execute() falló: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. La sentencia SQL ejecutada fue: INSERT INTO `capi` (`REGISTRO`, `FECHA`, `COD`, `INSTALADA`, `UTILIZADA`, `APROVECHAMIENTO`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\CapiController.php (65)
+in C:\EasyPHP-12.1\www\Odsys\index.php (13)
+2013/05/26 02:47:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `capi` (`REGISTRO`, `FECHA`, `COD`, `INSTALADA`, `UTILIZADA`, `APROVECHAMIENTO`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\EasyPHP-12.1\www\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\EasyPHP-12.1\www\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\EasyPHP-12.1\www\Odsys\protected\controllers\CapiController.php(65): CActiveRecord->save()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): CapiController->actionCreate()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\EasyPHP-12.1\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\EasyPHP-12.1\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('capi/create')
+#14 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/odsys/index.php/capi/create
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/capi/create
+---
+2013/05/26 02:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "2013-05-30" solicitada.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(270): CController->missingAction('2013-05-30')
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('2013-05-30')
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('capi/2013-05-30')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/odsys/index.php/capi/2013-05-30
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/capi/create
+---
+2013/05/26 02:58:52 [error] [php] Undefined variable: model (C:\EasyPHP-12.1\www\Odsys\protected\views\perm\index.php:26)
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(869): PermController->renderFile()
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(782): PermController->renderPartial()
+#2 C:\EasyPHP-12.1\www\Odsys\protected\controllers\PermController.php(108): PermController->render()
+#3 C:\EasyPHP-12.1\www\yii\framework\web\actions\CInlineAction.php(49): PermController->actionIndex()
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(286): PermController->runAction()
+#6 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): PermController->runActionWithFilters()
+#7 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): PermController->run()
+#8 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\EasyPHP-12.1\www\Odsys\index.php(13): CWebApplication->run()
+REQUEST_URI=/odsys/index.php/perm/index
+in C:\EasyPHP-12.1\www\Odsys\protected\views\perm\index.php (26)
+in C:\EasyPHP-12.1\www\Odsys\protected\controllers\PermController.php (108)
+in C:\EasyPHP-12.1\www\Odsys\index.php (13)
+2013/05/26 03:03:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\EasyPHP-12.1\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\EasyPHP-12.1\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 C:\EasyPHP-12.1\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('perm/delete/201...')
+#5 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 C:\EasyPHP-12.1\www\Odsys\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/odsys/index.php/perm/delete/2013-05-29
+HTTP_REFERER=http://127.0.0.1:8887/odsys/index.php/perm/1
+---

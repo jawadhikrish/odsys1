@@ -45,6 +45,7 @@ o <b>=</b>) al principio de cada uno de sus valores de búsqueda para especifica
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
+                'REGISTRO',
 		'FECHA',
 		array('name'=>'COD','value'=>'$data->cOD->DES','type'=>'text',),
 		'INSTALADA',
