@@ -63,7 +63,7 @@ class CapiController extends Controller
 		{
 			$model->attributes=$_POST['Capi'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->FECHA));
+				$this->redirect(array('view','id'=>$model->REGISTRO));
 		}
 
 		$this->render('create',array(
@@ -87,7 +87,7 @@ class CapiController extends Controller
 		{
 			$model->attributes=$_POST['Capi'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->FECHA));
+				$this->redirect(array('view','id'=>$model->REGISTRO));
 		}
 
 		$this->render('update',array(

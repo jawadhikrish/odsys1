@@ -4,6 +4,7 @@
  * This is the model class for table "capi".
  *
  * The followings are the available columns in table 'capi':
+ * @property string $REGISTRO
  * @property string $FECHA
  * @property integer $COD
  * @property integer $INSTALADA
@@ -41,11 +42,11 @@ class Capi extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('FECHA, COD, INSTALADA, UTILIZADA, APROVECHAMIENTO', 'required'),
-			array('COD, INSTALADA, UTILIZADA, APROVECHAMIENTO', 'numerical', 'integerOnly'=>true),
+			array('REGISTRO,FECHA, COD, INSTALADA, UTILIZADA, APROVECHAMIENTO', 'required'),
+			array('REGISTRO, COD, INSTALADA, UTILIZADA, APROVECHAMIENTO', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('FECHA, COD, INSTALADA, UTILIZADA, APROVECHAMIENTO', 'safe', 'on'=>'search'),
+			array('REGISTRO, FECHA, COD, INSTALADA, UTILIZADA, APROVECHAMIENTO', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,6 +68,7 @@ class Capi extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+                        'REGISTRO' => 'REGISTRO',
 			'FECHA' => 'Fecha de registro',
 			'COD' => 'Unidad Programatica',
 			'INSTALADA' => 'Capacidad Instalada',
@@ -85,8 +87,8 @@ class Capi extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
-		$criteria->compare('FECHA',$this->FECHA,true);
+                $criteria->compare('REGISTRO',$this->REGISTRO,true);
+		$criteria->compare('FECHA',$this->FECHA);
 		$criteria->compare('COD',$this->COD);
 		$criteria->compare('INSTALADA',$this->INSTALADA);
 		$criteria->compare('UTILIZADA',$this->UTILIZADA);

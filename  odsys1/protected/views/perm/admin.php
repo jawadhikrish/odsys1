@@ -46,6 +46,7 @@ La busqueda solo se realiza con codigos, tenga presente conocer los codigos de U
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
+                'REGISTRO',
 		'FECHA',
                 array('name'=>'COD','value'=>'$data->cOD->DES','type'=>'text',),
 		array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),

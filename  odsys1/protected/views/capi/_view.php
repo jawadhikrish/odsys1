@@ -4,13 +4,17 @@
 ?>
 
 <div class="view">
-
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('REGISTRO')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->REGISTRO), array('view', 'id'=>$data->REGISTRO)); ?>
+	<br />
+        
 	<b><?php echo CHtml::encode($data->getAttributeLabel('FECHA')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->FECHA), array('view', 'id'=>$data->FECHA)); ?>
+	<?php echo CHtml::encode($data->FECHA); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('COD')); ?>:</b>
-	<?php echo CHtml::encode($data->cOD->DES); ?>
+	<?php echo CHtml::link(CHtml::encode($data->cOD->DES),array('view', 'id'=>$data->FECHA)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('INSTALADA')); ?>:</b>

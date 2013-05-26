@@ -51,7 +51,7 @@ class PermController extends Controller
 		{
 			$model->attributes=$_POST['Perm'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->FECHA));
+				$this->redirect(array('view','id'=>$model->REGISTRO));
 		}
 
 		$this->render('create',array(
@@ -75,7 +75,7 @@ class PermController extends Controller
 		{
 			$model->attributes=$_POST['Perm'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->FECHA));
+				$this->redirect(array('view','id'=>$model->REGISTRO));
 		}
 
 		$this->render('update',array(

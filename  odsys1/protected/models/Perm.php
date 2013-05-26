@@ -4,6 +4,7 @@
  * This is the model class for table "perm".
  *
  * The followings are the available columns in table 'perm':
+ * @property string $REGISTRO
  * @property string $FECHA
  * @property integer $COD
  * @property integer $CODT
@@ -43,12 +44,12 @@ class Perm extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('FECHA, COD, CODT, ESTADO, CODRAYOSX, ESTADORAYOSX', 'required'),
-			array('COD, CODT, CODRAYOSX', 'numerical', 'integerOnly'=>true),
-			array('ESTADO, ESTADORAYOSX', 'length', 'max'=>50),
+			array('REGISTRO,FECHA, COD, CODT, ESTADO, CODRAYOSX, ESTADORAYOSX', 'required'),
+			array('REGISTRO,COD, CODT, CODRAYOSX', 'numerical', 'integerOnly'=>true),
+			array('REGISTRO,ESTADO, ESTADORAYOSX', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('FECHA, COD, CODT, ESTADO, CODRAYOSX, ESTADORAYOSX', 'safe', 'on'=>'search'),
+			array('REGISTRO, FECHA, COD, CODT, ESTADO, CODRAYOSX, ESTADORAYOSX', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -71,6 +72,7 @@ class Perm extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+                        'REGISTRO' => 'REGISTRO',
 			'FECHA' => 'Fecha de regitro',
 			'COD' => 'Unidad programatica',
 			'CODT' => 'Tipo de establecimiento',
@@ -90,8 +92,8 @@ class Perm extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
-		$criteria->compare('FECHA',$this->FECHA,true);
+                $criteria->compare('REGISTRO',$this->REGISTRO,true);
+		$criteria->compare('FECHA',$this->FECHA);
 		$criteria->compare('COD',$this->COD);
 		$criteria->compare('CODT',$this->CODT);
 		$criteria->compare('ESTADO',$this->ESTADO,true);
@@ -100,6 +102,12 @@ class Perm extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                         'sort'=>array(
+                                'defaultOrder'=>'COD ASC',
+                        ),
+                        'pagination'=>array(
+                                'pageSize'=>5
+                        ),
 		));
 	}
 }
