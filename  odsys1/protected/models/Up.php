@@ -21,6 +21,10 @@
  */
 class Up extends CActiveRecord
 {
+	public $D;
+	public $C;
+	public $N;
+	public $P;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -106,6 +110,47 @@ class Up extends CActiveRecord
 			'criteria'=>$criteria,
                         'sort'=>array('defaultOrder'=>'COD ASC'),
                         'pagination'=>array('pageSize'=>4),
+		));
+	}
+	
+	/**
+	 * getReportOne
+	 * Este metodo devuelve una lista con los datos de sentencia SQL
+	 * @return List
+	 */
+	public function getReporteGeneral($cod,$fecha) {
+		$criteria=new CDbCriteria;
+		$criteria->select   = 't.DES, t.COD, upje.CED AS C, pers.NOM AS N, tipos.DES AS D, SUM( pob.HOM ) + SUM( pob.MUJ ) AS P';
+		$criteria->join = 'INNER JOIN pob ON t.COD = pob.COD
+	   INNER JOIN upje ON t.COD = upje.COD
+	   INNER JOIN pers ON upje.CED = pers.CED
+	   INNER JOIN tipos ON upje.CODT = tipos.CODT';
+		$criteria->condition = "t.COD = '$cod' AND pob.ANO = '$fecha'";
+		$criteria->limit = 1;
+	
+		return new CActiveDataProvider($this, array(
+				'criteria'=>$criteria,
+	
+		));
+	}
+	
+	/**
+	 * getReportOne
+	 * Este metodo devuelve una lista con los datos de sentencia SQL
+	 * @return List
+	 */
+	public function getAllReporteGeneral() {
+		$criteria=new CDbCriteria;
+		$criteria->select   = 't.DES, t.COD, upje.CED AS C, pers.NOM AS N, tipos.DES AS D, SUM( pob.HOM ) + SUM( pob.MUJ ) AS P';
+		$criteria->join = 'INNER JOIN pob ON t.COD = pob.COD
+	   INNER JOIN upje ON t.COD = upje.COD
+	   INNER JOIN pers ON upje.CED = pers.CED
+	   INNER JOIN tipos ON upje.CODT = tipos.CODT';
+		$criteria->group= "t.COD";
+	
+		return new CActiveDataProvider($this, array(
+				'criteria'=>$criteria,
+	
 		));
 	}
 }

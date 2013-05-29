@@ -12,18 +12,18 @@ $this->breadcrumbs=array(
     </div>
     
     <div class="dashIcon span-3">
-        <a href="/odsys/index.php/reports/report1"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-table.png" alt="Page" /></a>
-        <div class="dashIconText"><a href="#1"><?php echo CHtml::link('Reporte Consultas',array('report1'))?></a></div>
+        <a href="/odsys/index.php/reports/reporteqp"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-table.png" alt="Page" /></a>
+        <div class="dashIconText"><a href="#1"><?php echo CHtml::link('Reporte Equipamiento',array('reporteqp'))?></a></div>
     </div>
     
     <div class="dashIcon span-3">
-        <a href="/odsys/index.php/reports/report1"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-table.png" alt="Page" /></a>
-        <div class="dashIconText"><a href="#1"><?php echo CHtml::link('Reporte Consultas',array('report1'))?></a></div>
+        <a href="/odsys/index.php/reports/reportGeneral"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-table.png" alt="Page" /></a>
+        <div class="dashIconText"><a href="#1"><?php echo CHtml::link('Reporte General',array('reportGeneral'))?></a></div>
     </div>
     
     <div class="dashIcon span-3">
-        <a href="/odsys/index.php/reports/report1"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-table.png" alt="Page" /></a>
-        <div class="dashIconText"><a href="#1"><?php echo CHtml::link('Reporte Consultas',array('report1'))?></a></div>
+        <a href="/odsys/index.php/reports/reportInfra"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-table.png" alt="Page" /></a>
+        <div class="dashIconText"><a href="#1"><?php echo CHtml::link('Reporte Infraestructura',array('reportInfra'))?></a></div>
     </div>
     
     <div class="dashIcon span-3">
