@@ -1,13 +1,14 @@
 <?php 
-
+if($idCod != 0){
 $this->menu=array(
-		array('label'=>'Generar PDF', 'url'=>array('pdf','idCodt'=>$idCod)),
-		array('label'=>'Generar Excel', 'url'=>array('excel','idCodt'=>$idCod)),
-                array('label'=>'Volver al menu', 'url'=>array('site/menu')),
+		array('label'=>'Generar PDF', 'url'=>array('pdf','idCodt'=>$idCod,'fecha'=>$fecha)),
+		array('label'=>'Generar Excel', 'url'=>array('excel','idCodt'=>$idCod,'fecha'=>$fecha)),
+//                 array('label'=>'Volver al menu', 'url'=>array('site/menu')),
               
-        array('label'=>'Generar PDF 2', 'url'=>array('cons/index?pdf=1')),
-	array('label'=>'Generar Excel 2', 'url'=>array('cons/index?xls=1')),
+//         array('label'=>'Generar PDF 2', 'url'=>array('cons/index?pdf=1')),
+// 	array('label'=>'Generar Excel 2', 'url'=>array('cons/index?xls=1')),
 );
+}
 ?>
 <?php $this->pageTitle=Yii::app()->name; ?>
 <h1><?php echo CHtml::encode(Yii::app()->name); ?> Consultas de las unidades programaticas</h1>
@@ -49,12 +50,12 @@ $this->menu=array(
 	</div>
 
 	<div>
-		<?php $this->widget('zii.widgets.grid.CGridView', array(
+		<?php echo $idCod; $this->widget('zii.widgets.grid.CGridView', array(
 				'id'=>'report-grid',
 				'dataProvider'=>$model->getReportOne($idCod,$fecha),
 				'columns'=>array(
 		'D',
-                'C',
+        'C',
 		'A',
 		'P',
 		'TOTAL',

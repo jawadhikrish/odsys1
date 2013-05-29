@@ -24,7 +24,7 @@ class ReportsController extends Controller
 	{
 		return array(
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
-						'actions'=>array('index','create','update','admin','delete','view','report1','excel','pdf'),
+						'actions'=>array('index','create','update','admin','delete','view','report1','excel','pdf','reporteqp','reportgeneral','reportinfra'),
 						'users'=>array('@'),
 				),
 				array('deny',  // deny all users
@@ -54,7 +54,6 @@ class ReportsController extends Controller
 	public function actionReport1()
 	{
 		$modelCons = Cons::model();
-		$model=new Cons();
 		if(isset($_POST['Cons'])){
 			$modelCons->attributes = $_POST['Cons'];
 			$this->render('report1',array(
@@ -67,9 +66,9 @@ class ReportsController extends Controller
 		}
 		else{
 			$this->render('report1',array(
-					'model'=>$model,
-					'idCod'=>$modelCons->COD,
-					'fecha'=>$modelCons->FECHA,
+					'model'=>$modelCons,
+					'idCod'=>0,
+					'fecha'=>0,
 					'excel'=>0,
 					'pdf'=>0,
 			));
@@ -77,27 +76,101 @@ class ReportsController extends Controller
 
 	}
 	
-	public function actionExcel($idCodt)
+	public function actionReporteqp()
+	{
+		$modelEqp = Eqp::model();
+		if(isset($_POST['Eqp'])){
+			$modelEqp->attributes = $_POST['Eqp'];
+			$this->render('reporteqp',array(
+					'model'=>$modelEqp,
+					'idCod'=>$modelEqp->COD,
+					'fecha'=>2013,
+					'excel'=>0,
+					'pdf'=>0,
+			));
+		}
+		else{
+			$this->render('reporteqp',array(
+					'model'=>$modelEqp,
+					'idCod'=>0,
+					'fecha'=>2013,
+					'excel'=>0,
+					'pdf'=>0,
+			));
+		}
+	
+	}
+	
+	public function actionReportinfra()
+	{
+		$modelEqp = Infra::model();
+		if(isset($_POST['Infra'])){
+			$modelEqp->attributes = $_POST['Infra'];
+			$this->render('reportInfra',array(
+					'model'=>$modelEqp,
+					'idCod'=>$modelEqp->COD,
+					'fecha'=>2013,
+					'excel'=>0,
+					'pdf'=>0,
+			));
+		}
+		else{
+			$this->render('reportInfra',array(
+					'model'=>$modelEqp,
+					'idCod'=>0,
+					'fecha'=>2013,
+					'excel'=>0,
+					'pdf'=>0,
+			));
+		}
+	
+	}
+	
+	public function actionReportgeneral()
+	{
+		$modelgeneral = Up::model();
+		if(isset($_POST['Up'])){
+			$modelgeneral->attributes = $_POST['Up'];
+			$this->render('reportGeneral',array(
+					'model'=>$modelgeneral,
+					'idCod'=>$modelgeneral->COD,
+					'fecha'=>2013,
+					'excel'=>0,
+					'pdf'=>0,
+			));
+		}
+		else{
+			$this->render('reportGeneral',array(
+					'model'=>$modelgeneral,
+					'idCod'=>0,
+					'fecha'=>2013,
+					'excel'=>0,
+					'pdf'=>0,
+			));
+		}
+	
+	}
+	
+	public function actionExcel($idCodt,$fecha)
 	{
 		$modelCons = Cons::model();
-		$model=new Cons();
 			$this->render('report1',array(
-					'model'=>$model,
-					'idCod'=>$modelCons->COD,
-					'fecha'=>$modelCons->FECHA,
+					'model'=>$modelCons,
+					'idCod'=>$idCodt,
+					'fecha'=>$fecha,
 					'excel'=>$idCodt,
 					'pdf'=>0,
 			));
 	}
 	
-	public function actionPdf($idCodt)
+	public function actionPdf($idCodt,$fecha)
 	{
 		$modelCons = Cons::model();
 		$model=new Cons();
 		$this->render('report1',array(
 				'model'=>$model,
-				'idCod'=>$modelCons->COD,
-				'fecha'=>$modelCons->FECHA,
+				'idCod'=>$idCodt,
+				'fecha'=>$fecha,
 				'excel'=>0,
 				'pdf'=>$idCodt,
 		));

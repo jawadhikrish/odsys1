@@ -16,6 +16,8 @@
  */
 class Infra extends CActiveRecord
 {
+	public $D;
+	public $TOTAL;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -119,6 +121,26 @@ class Infra extends CActiveRecord
             foreach($dataReader as $row) { 
                 return $row;
                 }
+        }
+        
+        /**
+         * getReportOne
+         * Este metodo devuelve una lista con los datos de sentencia SQL
+         * la lista contiene las suma de cada columna de consultas.... revisar la logica
+         * @return List
+         */
+        public function getReportOne($cod,$fecha) {
+        
+        	$criteria=new CDbCriteria;
+        	$criteria->select   = 'DES AS D, ESTADO,COUNT(t.CODT) AS TOTAL ';
+        	$criteria->join = 'INNER JOIN tipos ON t.CODT = tipos.CODT';
+        	$criteria->condition = "COD = '$cod' AND YEAR(FECHA) = '$fecha'";
+        	$criteria->group = "t.CODT, t.ESTADO";
+        	$criteria->compare('CODT',$this->CODT);
+        	return new CActiveDataProvider($this, array(
+        			'criteria'=>$criteria,
+        				
+        	));
         }
 }
          
