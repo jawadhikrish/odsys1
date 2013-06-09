@@ -28,7 +28,7 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		//'Registro',
+		'Registro',
 		'FECHA',
 		array( 'name'=>'COD','type'=>'raw','value'=>CHtml::link(CHtml::encode($model->cOD->DES),
                         array('up/view','id'=>$model->cOD->COD)),),
