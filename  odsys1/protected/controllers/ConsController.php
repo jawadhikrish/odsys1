@@ -8,6 +8,11 @@ class ConsController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/column2';
+        
+        public function actionPDF(){
+            $this->render('pdf2');
+
+        }
 
 	/**
 	 * @return array action filters
@@ -30,7 +35,7 @@ class ConsController extends Controller
 	{
 		return array(
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','create','update','admin','delete','view'),
+				'actions'=>array('index','PDF','Excel','create','update','admin','delete','view'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
@@ -72,7 +77,7 @@ class ConsController extends Controller
 			'model'=>$model,
 		));
 	}
-
+        
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
@@ -117,43 +122,25 @@ class ConsController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('Cons');
-                
-                                /*
-		*
-		*Linea de ejecucion libreria pdf
-		*http://www.yiiframework.com/extension/pdf
-		*
-		*/
-		if(isset($_GET['pdf'])){
-			$this->layout='//layouts/pdf';
-        $mPDF1 = Yii::app()->ePdf->mpdf();
-        $mPDF1->WriteHTML($this->render('index', array('dataProvider'=>$dataProvider),true));
-		$mPDF1->Output();
-		
-		}
-		
-		/*
-		*
-		*Genereador de excel usando la clase request
-		*
-		*/
-		if(isset($_GET['xls'])){
-		$model=Cons::model()->getReportOne($cod,$fecha);
-		Yii::app()->request->sendFile('Cosultas1.xls',$this->renderPartial('excel',array('model'=>$model,),true));
-		}
-		/*
-                 */
-                
-                
-                
-                
+                if(isset($_GET['xls'])){
+		$model=Cons::model()->findAll();
+		Yii::app()->request->sendFile('Odsys_Consultas.xls',$this->renderPartial('excel',array('model'=>$model,),true));
+		}   
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
-                
-
 	}
 
+        /**
+	 * Lists all models.
+	 */
+	public function actionExcel()
+	{
+		$dataProvider = $_SESSION['datos_filtrados']->getData();
+                if(isset($_GET['xls'])){
+		Yii::app()->request->sendFile('Odsys_Reporte_de_Consultas.xls',$this->renderPartial('excel',array($dataProvider,),true));
+		}    
+	}
 	/**
 	 * Manages all models.
 	 */
@@ -162,8 +149,7 @@ class ConsController extends Controller
 		$model=new Cons('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Cons']))
-			$model->attributes=$_GET['Cons'];
-
+			$model->attributes=$_GET['Cons'];                
 		$this->render('admin',array(
 			'model'=>$model,
 		));

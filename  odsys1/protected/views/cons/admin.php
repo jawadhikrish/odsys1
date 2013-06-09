@@ -10,6 +10,9 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'Listar registros', 'url'=>array('index')),
 	array('label'=>'Nuevo registro', 'url'=>array('create')),
+        array('label'=>'Generar PDF', 'url'=>array('PDF'), 'linkOptions'=>array('target'=>'_blank')),
+        array('label'=>'Generar  un reporte excel', 'url'=>array('cons/Excel?xls=1')),
+        array('label'=>'Exportar todos los datos a Excel', 'url'=>array('cons/index?xls=1')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -47,9 +50,8 @@ o <b>=</b>) al principio de cada uno de sus valores de búsqueda para especifica
 	'columns'=>array(
 		/*'Registro',*/
 		'FECHA',
-                'COD',
-                /*array('name'=>'COD','value'=>'$data->cOD->DES','type'=>'text',),*/
-		array('name'=>'CODT','value'=>'$data->cODT->DES','type'=>'text',),
+                'cOD.DES'=>array('name'=>'CODU','value'=>'$data->cOD->DES','type'=>'text',),
+		'cODT.DES'=>array('name'=>'CONS','value'=>'$data->cODT->DES','type'=>'text',),
 		/*'C1VESALANO',
 		'CSUBSECUENTE',
 		
@@ -63,5 +65,3 @@ o <b>=</b>) al principio de cada uno de sus valores de búsqueda para especifica
 		),
 	),
 )); ?>
-
-
