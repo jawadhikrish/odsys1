@@ -5,7 +5,9 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+
 return array(
+        
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Odsys',
 	'theme'=>'theme1',
@@ -14,8 +16,13 @@ return array(
 	'charset'=>'utf-8',
 	//'defaultController'=>'site/login',
 	// preloading 'log' component
+        
 	'preload'=>array('log'),
-
+        'preload' => array(
+            Yii::setPathOfAlias('chartjs', dirname(__FILE__).'/../extensions/yii-chartjs'),
+            'chartjs'
+        ),
+            
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
@@ -36,7 +43,9 @@ return array(
 
 	// application components
 	'components'=>array(
-	
+
+                'chartjs' => array('class' => 'chartjs.components.ChartJs'),
+            
 	//Libreria de configuracion para el pdf
 	    'ePdf' => array(
         'class'         => 'ext.yii-pdf.EYiiPdf',

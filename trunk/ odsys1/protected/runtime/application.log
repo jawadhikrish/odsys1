@@ -6857,3 +6857,140 @@ REQUEST_URI=/Odsys/index.php/cons/Excel?xls=1
 in C:\EasyPHP-12.1\www\Odsys\protected\views\cons\excel.php (9)
 in C:\EasyPHP-12.1\www\Odsys\protected\controllers\ConsController.php (141)
 in C:\EasyPHP-12.1\www\Odsys\index.php (13)
+2013/06/09 03:44:29 [error] [exception.CException] exception 'CException' with message 'El alias "chartjs.components.ChartJs" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(196): YiiBase::import('chartjs.compone...', true)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#6 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#7 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:45:27 [error] [exception.CException] exception 'CException' with message 'El alias "chartjs.components.ChartJs" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(196): YiiBase::import('chartjs.compone...', true)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#6 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#7 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:45:28 [error] [exception.CException] exception 'CException' with message 'El alias "chartjs.components.ChartJs" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(196): YiiBase::import('chartjs.compone...', true)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#6 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#7 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:45:29 [error] [exception.CException] exception 'CException' with message 'El alias "chartjs.components.ChartJs" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(196): YiiBase::import('chartjs.compone...', true)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#6 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#7 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:45:29 [error] [exception.CException] exception 'CException' with message 'El alias "chartjs.components.ChartJs" es inválido. Asegúrese de que apunta a un archivo PHP y el archivo tiene permisos de lectura.' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:316
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(196): YiiBase::import('chartjs.compone...', true)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#3 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#6 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#7 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:50:17 [error] [exception.CException] exception 'CException' with message 'La configuración del objeto debe ser un array conteniendo un elemento "class".' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:193
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#3 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#6 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:50:39 [error] [exception.CException] exception 'CException' with message 'La configuración del objeto debe ser un array conteniendo un elemento "class".' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:193
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#3 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#6 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:50:40 [error] [exception.CException] exception 'CException' with message 'La configuración del objeto debe ser un array conteniendo un elemento "class".' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:193
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#3 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#6 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:50:40 [error] [exception.CException] exception 'CException' with message 'La configuración del objeto debe ser un array conteniendo un elemento "class".' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:193
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#3 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#6 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:50:40 [error] [exception.CException] exception 'CException' with message 'La configuración del objeto debe ser un array conteniendo un elemento "class".' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:193
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#3 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#6 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
+2013/06/09 03:50:40 [error] [exception.CException] exception 'CException' with message 'La configuración del objeto debe ser un array conteniendo un elemento "class".' in C:\EasyPHP-12.1\www\yii\framework\YiiBase.php:193
+Stack trace:
+#0 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#1 C:\EasyPHP-12.1\www\yii\framework\base\CModule.php(523): CModule->getComponent('chartjs')
+#2 C:\EasyPHP-12.1\www\yii\framework\base\CApplication.php(152): CModule->preloadComponents()
+#3 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(125): CApplication->__construct('C:\EasyPHP-12.1...')
+#4 C:\EasyPHP-12.1\www\yii\framework\YiiBase.php(98): YiiBase::createApplication('CWebApplication', 'C:\EasyPHP-12.1...')
+#5 C:\EasyPHP-12.1\www\Odsys\index.php(13): YiiBase::createWebApplication('C:\EasyPHP-12.1...')
+#6 {main}
+REQUEST_URI=/Odsys/index.php/cons/index
+HTTP_REFERER=http://127.0.0.1/Odsys/index.php/cons/admin?xls=1
+---
