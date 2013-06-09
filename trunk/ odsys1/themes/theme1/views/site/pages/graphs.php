@@ -331,7 +331,7 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                 'labels' => array("January","February","March","April","May","June"),
                 'datasets' => array(
                     array(
-                        "fillColor" => "#ff00ff",
+                        "fillColor" => "#001d7e",
                         "strokeColor" => "rgba(220,220,220,1)",
                         "data" => array(10, 20, 30, 40, 50, 60)
                     )       
