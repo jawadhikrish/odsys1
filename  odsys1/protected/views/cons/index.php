@@ -50,15 +50,15 @@ $this->menu=array(
 <?php 
         $this->widget('chartjs.widgets.ChBars', 
             array(
-                'width' => 600,
-                'height' => 300,
+                'width' => 900,
+                'height' => 400,
                 'htmlOptions' => array(),
-                'labels' => array("January","February","March","April","May","June"),
+                'labels' => array("January","February","March","April","May","June","July","August","September","October","November","Dicember"),
                 'datasets' => array(
                     array(
-                        "fillColor" => "#ff00ff",
+                        "fillColor" => "#001d7e",
                         "strokeColor" => "rgba(220,220,220,1)",
-                        "data" => array(10, 20, 30, 40, 50, 60)
+                        "data" => array(10, 20, 30, 40, 50, 60,90,20,30,90,80,20)
                     )       
                 ),
                 'options' => array("value")
