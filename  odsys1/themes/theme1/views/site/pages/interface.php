@@ -160,7 +160,7 @@ $this->widget('zii.widgets.jui.CJuiButton',
 			'caption'=>'Click on me!',
 		'value'=>'asd',
 		'htmlOptions'=>array(
-        'style'=>'height:20px;',
+        'style'=>'height:40px;',
 		'class'=>'shadowbutton'
     	),
 		'onclick'=>'js:function(){alert("The button has been clicked!"); this.blur(); return false;}',
